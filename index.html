@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manikanta Vanapalli </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="website icon" type="png" href="./logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo">Mani<span class="green">.</span></h1>
+        <img src="/bx-menu.svg" class="menu-icon" alt="Menu" id="menu-icon">
+        <div class="nav-links">
+            <a href="index.html" id="home-link" class="active">Home</a>
+            <a href="#resume" id="resume-link">About me</a>
+            <a href="#services" id="services-link">Services</a>
+            <a href="#portfolio" id="portfolio-link">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <!------------------------------------<    button>  HIRE ME </button     >-------------- IF REQUIRED ------------>
+        </div>
+    </nav>
+    
+    <div class="container" id="home">
+        <div class="content">
+            <div class="home-text">
+                <h1><span>Manikanta</span> Vanapalli</h1>
+                <h2>I'm a 
+                    <span style="--i:4;" data-text="Coder">Coder</span>
+                    <span style="--i:3;" data-text="Developer">Developer</span>
+                    <span style="--i:2;" data-text="Data Anylist">Data Anylist</span>
+                    <span style="--i:1;" data-text="Web Designer">Web Designer</span>
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ab tenetur deserunt, dolorum est, ipsa odit labore odio dignissimos commodi modi, consequuntur veniam vero velit voluptatibus sunt deleniti dolore amet.</p>
+            </div>
+
+            <div class="home-icons">
+                <button class="download-btn" onclick="downloadResume()">Download Resume</button>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/vanapalli-manikanta-595776261"><i class='bx bxl-linkedin'></i><!--boxicons--></a>
+                    <a href="https://www.github.com/MANIKANTAv6264"><i class='bx bxl-github'></i><!--boxicons--></a>
+                    <a href="https://www.instagram.com/manikanta_6264_v"><i class='bx bxl-instagram'></i><!--boxicons--></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="pic.jpg" >
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+ 
+    <section>
+        <div class="resume-container" id="resume">
+            <h1>Why <span>Hire Me?</span></h1>
+            <div class="resume-buttons">
+                <button class="resume-btn" onclick="showContent('about-me')">About Me</button>
+                <button class="resume-btn" onclick="showContent('education')">Education</button>
+                <button class="resume-btn" onclick="showContent('courses')">courses</button>
+                <button class="resume-btn" onclick="showContent('skills')">Skills</button>
+                <button class="resume-btn" onclick="showContent('experience')">Hobbies</button>
+                
+            
+            </div>
+            <div class="resume-content" id="about-me">
+                <h2>About <span>Me</span></h2>
+                <div class="about-me-grid">
+                    <span>Name:</span>Manikanta
+                    <span>Status:</span> Single
+                    <span>Experience:</span> 1 year
+                    <span>Phone Number:</span> 9346478480
+                    <span>Gender:</span> Male
+                    <span>City:</span> Vishakapatnam
+                    <span>Full Time:</span> Yes
+                    <span>Email:</span> manikantavanapalli.com
+                    <span>Age:</span> 20
+                    <span>Nationality:</span> India
+                    <span>Freelance:</span> Available
+                    <span>Language:</span> English
+                </div>
+            </div>
+            <div class="resume-content" id="experience">
+                <h2>My <span>Hobbies</span></h2>
+                <div class="experience-grid">
+                    <div class="experience-box">Reading Books</div>
+                    <div class="experience-box">Listening Songs</div>
+                    <div class="experience-box">Browsing Net</div>
+                    <div class="experience-box">Gaming</div>
+                    <div class="experience-box">Solving Puzzles</div>
+                    <div class="experience-box">Story Writing</div>
+                </div>
+            </div>
+            <div class="resume-content" id="courses">
+                <h2>My <span>Courses</span></h2>
+                <div class="courses-grid">
+                    <div class="experience-box">Data Analysis With R Programming</div>
+                    <div class="experience-box">qwertyuiop</div>
+                    <div class="experience-box">Browsing Net</div>
+                    <div class="experience-box">Gaming</div>
+                    <div class="experience-box">Solving Puzzles</div>
+                    <div class="experience-box">Story Writing</div>
+                </div>
+            </div>
+            <div class="resume-content" id="education">
+                <h2>My <span>Education</span></h2>
+            <div class="education-grip">
+                <div class="education-box">Graduation</div>
+                <div class="education-box">Intermediate</div>
+                <div class="education-box">10th Class</div>
+            </div>
+            </div>
+            <div class="resume-content" id="skills">
+                <h2>My <span>Skills</span></h2>
+                <div class="skills-grid">
+                    <div class="skills-box">C</div>
+                    <div class="skills-box">CSS</div>
+                    <div class="skills-box">HTML</div>
+                    <div class="skills-box">Python</div>
+                    <div class="skills-box">MongoDB</div>
+                    <div class="skills-box">JavaScript</div>
+                    <div class="skills-box">React JS</div>
+                    <div class="skills-box">Github</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services active" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+
+            <div class="services-box">
+                <div class="icons">
+                    <img src="./code-slash.svg"> <!--icon-->
+                    <a href="#"><img src="./arrow-left.svg"></a>
+                </div>
+                <h3> Web Development </h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatem, iure itaque ipsum ipsa amet a dolorem nesciunt dolores eveniet quam dicta doloremque delectus nemo? Consequuntur dolore minus tenetur laboriosam.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icons">
+                    <i><img src="./brush-fill.svg"></i> <!--icon-->
+                    <a href="#"><img src="./arrow-left.svg"></a>
+                </div>
+                <h3> UX/UI Designer</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatem, iure itaque ipsum ipsa amet a dolorem nesciunt dolores eveniet quam dicta doloremque delectus nemo? Consequuntur dolore minus tenetur laboriosam.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icons">
+                    <img src="./android2.svg"> <!--icon-->
+                    <a href="#"><img src="./arrow-left.svg"></a>
+                </div>
+                <h3> Android Developer </h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatem, iure itaque ipsum ipsa amet a dolorem nesciunt dolores eveniet quam dicta doloremque delectus nemo? Consequuntur dolore minus tenetur laboriosam.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icons">
+                    <img src="./graph-up-arrow.svg"> <!--icon-->
+                    <a href="#"><img src="./arrow-left.svg"></a>
+                </div>
+                <h3> SEO </h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatem, iure itaque ipsum ipsa amet a dolorem nesciunt dolores eveniet quam dicta doloremque delectus nemo? Consequuntur dolore minus tenetur laboriosam.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icons">
+                    <img src="./camera-fill.svg"> <!--icon-->
+                    <a href="#"><img src="./arrow-left.svg"></a>
+                </div>
+                <h3> photography </h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatem, iure itaque ipsum ipsa amet a dolorem nesciunt dolores eveniet quam dicta doloremque delectus nemo? Consequuntur dolore minus tenetur laboriosam.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icons">
+                    <img src="./controller.svg  ">
+                    <img src="./collection-play-fill.svg  ">  <!--icon-->
+                    <a href="#"><img src="./arrow-left.svg"></a>
+                </div>
+                <h3> Game Development / Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatem, iure itaque ipsum ipsa amet a dolorem nesciunt dolores eveniet quam dicta doloremque delectus nemo? Consequuntur dolore minus tenetur laboriosam.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio active" id="portfolio">
+        <h2 class="heading">Latest<span> Project</span></h2>
+        <div class="portfolio-cotainer">
+            <div class="portfolio-box">
+
+                <div class="portfolio-details active">
+                    <p class="numb">01</p>
+                    <h3>Frontend Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam quaerat non similique aperiam atque corporis in reprehenderit impedit totam velit nihil nulla, cupiditate rem iusto ex veniam nisi cumque.</p>
+                    <div class="tech">
+                        <p>HTML5 , CSS3 , Java Script</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="# "><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-details">
+                    <p class="numb">02</p>
+                    <h3>Frontend Project</h3>
+                    <p>qwertyuiop   qwertyuiopqwertyuio ssedrftvgb sedrctvzw4xctfvygex5c vgu4wzexcfyvgu4se5drtyuhiedrftgyhifvg</p>
+                    <div class="tech">
+                        <p>HTML5 , CSS3 , Java Script</p>
+                    </div>
+                    <div class="live-github">
+                        <a herf="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a herf="#"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <div class="portfolio-carousel">
+                    <div class="img-slide">
+                        <div class="img-item">
+                            <img src="./profile_1.jpg" alt="portfolio-1" >
+                        </div>
+                        <div class="img-item">
+                            <img src="./profile_2.jpg" alt="portfolio-2" >
+                        </div>
+                        
+                    </div>
+            </div>
+            <div class="navigation">
+                <button class="arrow-left disabled"><i class='bx bx-chevron-left'></i></button>
+                <button class="arrow-right"><i class='bx bx-chevron-right'></i></button>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="contact-section" id="contact">
+            <div class="contact-info">
+                <h1>Let's <span>Work Together</span></h1>
+                <p><img src="./telephone-fill.svg"> (+91) 9346478480 </p>
+                <p><img src="./envelope-fill.svg"> manikantavanapalli6264@gmail.com</p>
+                <p><img src="./geo-alt-fill.svg"> 5-109/4, Rajucheruvu, pendurthi, Vishakapatnam, andhraPradesh, India</p>
+            </div>
+        <div class="contact-container">
+    <h1>Contact <span>Me</span></h1>
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="32d8d196-9b6a-4f3c-88be-49090e21f74b">
+
+        <div class="input-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="input-group">
+        <input type="text" name="subject" placeholder="Subject" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        </div>
+
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <!-- Honeypot for bot protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <!-- Optional: Redirect to thank you page -->
+        <!-- <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you.html"> -->
+
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <script>
+        function downloadResume() {
+            const link = document.createElement('a');
+            link.href = 'manikanta_resume.pdf';
+            link.download = 'Manikanta_Vanapalli_Resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        function showContent(section) {
+            document.querySelectorAll('.resume-content').forEach(el => el.style.display = 'none');
+            document.getElementById(section).style.display = 'block';
+        }
+
+        const resumeBtns = document.querySelectorAll('.resume-btn');
+            resumeBtns.forEach((btn , idx) => {
+    btn.addEventListener('click', () => {
+        const resumeDetails = document.querySelectorALL('.resume-details');
+        resumeBtns.forEach(btn =>{
+            btn.classList.remove('active');
+        });
+        btn.classList.add('active');
+        resumeDetails.forEach(details =>{
+            details.classList.remove('active');
+        });
+        resumeDetails[idx].classList.add('active');
+    });
+    });
+
+    const arrowRight= document.querySelector('.portfolio-box .navigation .arrow-right');
+    const arrowLeft= document.querySelector('.portfolio-box .navigation .arrow-left');
+    let index = 0;
+    const activePortfolio = () => {
+        const imgSlide = document.querySelector('.portfolio-carousel .img-slide');
+        const portfolioDetails = document.querySelectorAll('.portfolio-detail')
+
+        imgSlide.style.transform = 'translateX(calc(${index * -100}% - ${index * 2}rem))';
+        portfolioDetails.forEach(detail =>{
+            detail.classList.remove('active');
+        });
+        portfolioDetails[index].classList.add('active');
+    }
+
+
+
+
+    arrowRight.addEventListener('click',() => {
+        if(index < 4){
+            index++;
+            arrowLeft.classList.remove('disabled');
+        }
+        else{
+            index = 5;
+            arrowRight.classList.add('disabled');
+        }
+        activePortfolio();
+    });
+
+    arrowLeft.addEventListener('click',() => {
+        if(index > 1){
+            index--;
+            arrowRight.classList.remove('disabled');
+        }
+        else{
+            index = 0;
+            arrowLeft.classList.add('disabled');
+        }
+        activePortfolio();
+    });
+    </script>
+    
+
+
+</body>
+</html>
