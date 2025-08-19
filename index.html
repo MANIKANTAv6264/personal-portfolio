@@ -5,287 +5,468 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manikanta Vanapalli </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="portfolio.css">
-    <link rel="website icon" type="png" href="./logo.png">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <nav>
         <h1 class="logo">Mani<span class="green">.</span></h1>
         <img src="/bx-menu.svg" class="menu-icon" alt="Menu" id="menu-icon">
         <div class="nav-links">
-            <a href="index.html" id="home-link" class="active">Home</a>
-            <a href="#resume" id="resume-link">About me</a>
-            <a href="#services" id="services-link">Services</a>
-            <a href="#portfolio" id="portfolio-link">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" id="home-link" class="active">Home</a>
+            <a href="#about-me" id="resume-link">About me</a>            
+            <a href="#services" id="services-link">Services</a>        
+            <a href="#portfolio" id="portfolio-link">Portfolio</a>     
+            <a href="#contact">Contact</a>                             
             <!------------------------------------<    button>  HIRE ME </button     >-------------- IF REQUIRED ------------>
         </div>
     </nav>
     
-    <div class="container" id="home">
-        <div class="content">
+    <section id="home" class="home ">
+        <div class="container">
+                    <div class="content">
             <div class="home-text">
                 <h1><span>Manikanta</span> Vanapalli</h1>
                 <h2>I'm a 
-                    <span style="--i:4;" data-text="Coder">Coder</span>
+                    <span style="--i:4;" data-text="Programmer">Programmer</span>
                     <span style="--i:3;" data-text="Developer">Developer</span>
                     <span style="--i:2;" data-text="Data Anylist">Data Anylist</span>
                     <span style="--i:1;" data-text="Web Designer">Web Designer</span>
                 </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ab tenetur deserunt, dolorum est, ipsa odit labore odio dignissimos commodi modi, consequuntur veniam vero velit voluptatibus sunt deleniti dolore amet.</p>
+                <p class="">A passionate Data Analyst and Web Developer who loves transforming data into meaningful insights and building intuitive web applications.   I specialize in data analysis, data visualization, and responsive web design always learning, always building.</p>
             </div>
 
             <div class="home-icons">
-                <button class="download-btn" onclick="downloadResume()">Download Resume</button>
+                <button class="btn" onclick="downloadResume()">Download Resume</button>
                 <div class="icon">
-                    <a href="https://www.linkedin.com/in/vanapalli-manikanta-595776261"><i class='bx bxl-linkedin'></i><!--boxicons--></a>
-                    <a href="https://www.github.com/MANIKANTAv6264"><i class='bx bxl-github'></i><!--boxicons--></a>
-                    <a href="https://www.instagram.com/manikanta_6264_v"><i class='bx bxl-instagram'></i><!--boxicons--></a>
+                    <a href="https://www.linkedin.com/in/vanapalli-manikanta-595776261"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.github.com/MANIKANTAv6264"><i class="bi bi-github"></i></a>
+                    <a href="https://www.instagram.com/manikanta_6264_v"><i class="bi bi-instagram"></i></a>
                 </div>
             </div>
         </div>
         <div class="home-img">
             <div class="img-box">
                 <div class="img-item">
-                    <img src="pic.jpg" >
+                    <img src="./profile-PIC.png" >
                 </div>
             </div>
+        </div>  
         </div>
-        
-        
-    </div>
- 
-    <section>
-        <div class="resume-container" id="resume">
-            <h1>Why <span>Hire Me?</span></h1>
-            <div class="resume-buttons">
-                <button class="resume-btn" onclick="showContent('about-me')">About Me</button>
-                <button class="resume-btn" onclick="showContent('education')">Education</button>
-                <button class="resume-btn" onclick="showContent('courses')">courses</button>
-                <button class="resume-btn" onclick="showContent('skills')">Skills</button>
-                <button class="resume-btn" onclick="showContent('experience')">Hobbies</button>
-                
-            
-            </div>
-            <div class="resume-content" id="about-me">
-                <h2>About <span>Me</span></h2>
-                <div class="about-me-grid">
-                    <span>Name:</span>Manikanta
-                    <span>Status:</span> Single
-                    <span>Experience:</span> 1 year
-                    <span>Phone Number:</span> 9346478480
-                    <span>Gender:</span> Male
-                    <span>City:</span> Vishakapatnam
-                    <span>Full Time:</span> Yes
-                    <span>Email:</span> manikantavanapalli.com
-                    <span>Age:</span> 20
-                    <span>Nationality:</span> India
-                    <span>Freelance:</span> Available
-                    <span>Language:</span> English
-                </div>
-            </div>
-            <div class="resume-content" id="experience">
-                <h2>My <span>Hobbies</span></h2>
-                <div class="experience-grid">
-                    <div class="experience-box">Reading Books</div>
-                    <div class="experience-box">Listening Songs</div>
-                    <div class="experience-box">Browsing Net</div>
-                    <div class="experience-box">Gaming</div>
-                    <div class="experience-box">Solving Puzzles</div>
-                    <div class="experience-box">Story Writing</div>
-                </div>
-            </div>
-            <div class="resume-content" id="courses">
-                <h2>My <span>Courses</span></h2>
-                <div class="courses-grid">
-                    <div class="experience-box">Data Analysis With R Programming</div>
-                    <div class="experience-box">qwertyuiop</div>
-                    <div class="experience-box">Browsing Net</div>
-                    <div class="experience-box">Gaming</div>
-                    <div class="experience-box">Solving Puzzles</div>
-                    <div class="experience-box">Story Writing</div>
-                </div>
-            </div>
-            <div class="resume-content" id="education">
-                <h2>My <span>Education</span></h2>
-            <div class="education-grip">
-                <div class="education-box">Graduation</div>
-                <div class="education-box">Intermediate</div>
-                <div class="education-box">10th Class</div>
-            </div>
-            </div>
-            <div class="resume-content" id="skills">
-                <h2>My <span>Skills</span></h2>
-                <div class="skills-grid">
-                    <div class="skills-box">C</div>
-                    <div class="skills-box">CSS</div>
-                    <div class="skills-box">HTML</div>
-                    <div class="skills-box">Python</div>
-                    <div class="skills-box">MongoDB</div>
-                    <div class="skills-box">JavaScript</div>
-                    <div class="skills-box">React JS</div>
-                    <div class="skills-box">Github</div>
-                </div>
-            </div>
-        </div>
+  
     </section>
+<!----------------------------------------About section------------------------> 
+    <section class="about-me " id="about-me">
+        <div class="resume-container">
+            <div class="resume-box">
+                <h2>Why Hire Me?</h2>
+                <p class="desc">“Hire me if you're looking for someone who can think with data, design with purpose, and deliver with passion.”</p>
+                <button class="resume-btn active">About Me</button>
+                <button class="resume-btn">Education</button>
+                <button class="resume-btn">Courses</button>
+                <button class="resume-btn">Skills</button>
+                <!--<button class="resume-btn">Hobbies</button>-->
+            </div>
+            <div class="resume-box">
+                <div class="resume-content about-me active">
+                    <h2 class="heading">About <span>Me</span></h2>
+                    <p class="desc">I'm Manikanta Vanapalli, a passionate Data Analyst and Web Developer from Vishakapatnam. I specialize in transforming raw data into meaningful insights and creating responsive, user-friendly websites. With hands-on experience and a love for tech, I'm always exploring new ways to build, learn, and grow.</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p>Name <span>Manikanta</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Gender <span>Male</span></p>
+                        </div>
+                         <div class="resume-item">
+                            <p>Age <span>20</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Status <span>Single</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>City <span>Vishakapatnam</span></p>
+                        </div>                         
+                        <div class="resume-item">
+                            <p>Nationality <span>India</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Experience <span>1 year</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Full Time <span>Yes</span></p>
+                        </div>                       
+                        <div class="resume-item">
+                            <p>Freelance <span>Available</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Phone Number <span>9346478480</span></p>
+                        </div>                        
+                        <div class="resume-item">
+                            <p>Email <span>manikantavanapalli6264@gmail.com</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Language <span>English</span></p>
+                        </div>
+                    </div>
+                </div>
 
-    <section class="services active" id="services">
+                <div class="resume-content education">
+                    <h2 class="heading">My <span>Education</span></h2>
+                    <p class="desc">I’ve pursued my education with a strong focus on technology and problem-solving. Currently, I'm pursuing a B.Tech at Avanthi Institutions (2022–2026), where I’ve developed my core skills in data and development. Prior to that, I completed my Intermediate at Sri Balaji Junior College and my SSC from Govt High School PDT, building a solid foundation for my technical journey.</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2022-2026</p>
+                            <h3>B-tech</h3>
+                            <p class="company">Avanthi Institutions</p>
+                            <p>Pursuing B.Tech in Data Science Engineering, building strong foundations in programming.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2020-2022</p>
+                            <h3>Intermediate</h3>
+                            <p class="company">Sri Balaji Jnr College</p>
+                            <p>completed MPC(Maths, Physics, Chemistry) with focus on anlytical and logical skills.</p>
+                            <p>                                                                                    </p>
+                            <p>                                                                                    </p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2020</p>
+                            <h3>SSC</h3>
+                            <p class="company">Govt High School PDT</p>
+                            <p>Completed secondary education with high score , developing strong fundamentals in maths and science.</p>
+                        </div> 
+                    </div>
+                </div>
+               
+                <div class="resume-content courses">
+                    <h2 class="heading">My <span>Courses</span></h2>
+                    <p class="desc">I'm a continuous learner who regularly explores new technologies and tools through online certifications. I stay updated with industry trends to sharpen my skills and deliver smart, modern solutions.</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <h4>Data Science</h4>
+                            <p>IBM</p>
+                            <a href="Data Science ,AI & Development.pdf">certificate</a><!------------------->
+                        </div><!-------------------------------------------->
+                        <div class="resume-item">
+                            <h4>Data Visulization</h4>
+                            <p>IBM</p>
+                            <a href="data visulization certificate.pdf">certificate</a><!------------------->
+                        </div><!-------------------------------------------->
+                        <div class="resume-item">
+                            <h4>Data Analysis</h4>
+                            <p>GOOGLE</p>
+                            <a href="Data Analysis With R Programming.pdf">certificate</a><!------------------->
+                        </div><!-------------------------------------------->
+                        <div class="resume-item">
+                            <h4>NoSql Database</h4>
+                            <p>EduSkills</p>
+                            <a href="No sql database.PDF">certificate</a><!------------------->
+                        </div><!-------------------------------------------->
+                        <div class="resume-item">
+                            <h4>Devops</h4>
+                            <p>IBM</p>
+                            <a href="Devops.pdf">certificate</a><!------------------->
+                        </div><!-------------------------------------------->
+                        <div class="resume-item">
+                            <h4>Node JS</h4>
+                            <p>INFOSYS</p>
+                            <a href="Node.JS.PDF">certificate</a><!------------------->
+                        </div><!-------------------------------------------->
+                    </div>
+                </div>
+                
+                <div class="resume-content skills" >
+                    <h2 class="heading">My <span>Skills</span></h2>
+                    <p class="desc">I’m always learning and improving my skills through real-world projects and continuous practice. I focus on both technical and creative problem-solving to build efficient, modern solutions.</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <i class="fab fa-html5"></i>
+
+                            <span>HTML5</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class="fab fa-css3-alt"></i>
+
+                            <span>CSS3</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class="fab fa-js"></i>
+
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class="fab fa-react"></i>
+
+                            <span>React.js</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class="fab fa-python"></i>
+
+                            <span>Python</span>
+                        </div>
+                        <div class="resume-item">
+                           <i class="fab fa-git"></i>
+
+                            <span>Git</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class="fab fa-github"></i>
+
+                            <span>Github</span>
+                        </div> 
+                        <div class="resume-item">
+                            <i class="fab fa-linux"></i>
+
+                            <span>Linux</span>
+                        </div> 
+                        <div class="resume-item">
+                            <i class="fab fa-css3-alt"></i>
+
+                            <span>CSS3</span>
+                        </div>
+                         <div class="resume-item">
+                            <i class="fa-solid fa-database"></i>
+
+                            <span>SQL</span>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </section>  
+<!--------------- Services section----------->
+
+    <section class="services " id="services">
         <h2 class="heading">My <span>Services</span></h2>
         <div class="services-container">
-
             <div class="services-box">
-                <div class="icons">
-                    <img src="./code-slash.svg"> <!--icon-->
-                    <a href="#"><img src="./arrow-left.svg"></a>
+                <div class="icon">
+                    <i class="bi bi-code-slash"></i>
+                    <a href="https://github.com/MANIKANTAv6264/clg-website"><i class="bi bi-arrow-left"></i></a>
                 </div>
                 <h3> Web Development </h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatem, iure itaque ipsum ipsa amet a dolorem nesciunt dolores eveniet quam dicta doloremque delectus nemo? Consequuntur dolore minus tenetur laboriosam.</p>
+                <p>Building responsive and dynamic websites using modern technologies like HTML, CSS, JavaScript, and frameworks. Focused on creating user-friendly and performance-optimized solutions.</p>
             </div>
 
             <div class="services-box">
-                <div class="icons">
-                    <i><img src="./brush-fill.svg"></i> <!--icon-->
-                    <a href="#"><img src="./arrow-left.svg"></a>
+                <div class="icon">
+                    <i class="bi bi-brush"></i>
+                    <a href="#"><i class="bi bi-arrow-left"></i></a>
                 </div>
                 <h3> UX/UI Designer</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatem, iure itaque ipsum ipsa amet a dolorem nesciunt dolores eveniet quam dicta doloremque delectus nemo? Consequuntur dolore minus tenetur laboriosam.</p>
+                <p>Designing clean, creative, and interactive user interfaces that enhance user experience. Skilled in prototyping and wireframing with attention to detail and usability.</p>
             </div>
 
             <div class="services-box">
-                <div class="icons">
-                    <img src="./android2.svg"> <!--icon-->
-                    <a href="#"><img src="./arrow-left.svg"></a>
+                <div class="icon">
+                    <i class="bi bi-android2"></i>
+                    <a href="#"><i class="bi bi-arrow-left"></i></a>
                 </div>
                 <h3> Android Developer </h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatem, iure itaque ipsum ipsa amet a dolorem nesciunt dolores eveniet quam dicta doloremque delectus nemo? Consequuntur dolore minus tenetur laboriosam.</p>
+                <p>Developing mobile applications with intuitive interfaces and smooth performance. Experienced in front-end design and Android app development using Java and Kotlin.</p>
             </div>
 
             <div class="services-box">
-                <div class="icons">
-                    <img src="./graph-up-arrow.svg"> <!--icon-->
-                    <a href="#"><img src="./arrow-left.svg"></a>
+                <div class="icon">
+                    <i class="bi bi-graph-up-arrow"></i>
+                    <a href="#"><i class="bi bi-arrow-left"></i></a>
                 </div>
                 <h3> SEO </h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatem, iure itaque ipsum ipsa amet a dolorem nesciunt dolores eveniet quam dicta doloremque delectus nemo? Consequuntur dolore minus tenetur laboriosam.</p>
+                <p>Optimizing websites for better visibility and ranking on search engines. Skilled in keyword research, on-page/off-page SEO, and performance analysis.</p>
             </div>
 
             <div class="services-box">
-                <div class="icons">
-                    <img src="./camera-fill.svg"> <!--icon-->
-                    <a href="#"><img src="./arrow-left.svg"></a>
+                <div class="icon">
+                   <i class="bi bi-cpu"></i>
+                   <a href="https://github.com/MANIKANTAv6264/AI-ChatBot.git"><i class="bi bi-arrow-left"></i></a>
                 </div>
-                <h3> photography </h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatem, iure itaque ipsum ipsa amet a dolorem nesciunt dolores eveniet quam dicta doloremque delectus nemo? Consequuntur dolore minus tenetur laboriosam.</p>
+                <h3> AI & ML </h3>
+                <p>Applying Artificial Intelligence and Machine Learning techniques to solve real-world problems. Experienced in Python, data preprocessing, and building predictive models</p>
             </div>
 
             <div class="services-box">
-                <div class="icons">
-                    <img src="./controller.svg  ">
-                    <img src="./collection-play-fill.svg  ">  <!--icon-->
-                    <a href="#"><img src="./arrow-left.svg"></a>
+                <div class="icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <a href="https://github.com/MANIKANTAv6264/Data-Analysis"><i class="bi bi-arrow-left"></i></a>
                 </div>
-                <h3> Game Development / Digital Marketing</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatem, iure itaque ipsum ipsa amet a dolorem nesciunt dolores eveniet quam dicta doloremque delectus nemo? Consequuntur dolore minus tenetur laboriosam.</p>
+                <h3>Data Analysis</h3>
+                <p>Transforming raw data into actionable insights through visualization and analysis. Proficient in Python, Pandas, and data visualization tools to support decision-making.”
+</p>
             </div>
         </div>
     </section>
-
-    <section class="portfolio active" id="portfolio">
-        <h2 class="heading">Latest<span> Project</span></h2>
-        <div class="portfolio-cotainer">
+<!------- portfolio-section --------->
+    <section class="portfolio " id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+        <div class="portfolio-container"> 
             <div class="portfolio-box">
-
                 <div class="portfolio-details active">
                     <p class="numb">01</p>
                     <h3>Frontend Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam quaerat non similique aperiam atque corporis in reprehenderit impedit totam velit nihil nulla, cupiditate rem iusto ex veniam nisi cumque.</p>
+                    <p>Designed and developed a complete website for Sri Balaji Educational Institutions, covering both frontend and backend functionalities. Focused on clean UI, smooth navigation, and performance optimization. This project strengthened my understanding of deployment, and maintaining real-world applications.</p>
                     <div class="tech">
-                        <p>HTML5 , CSS3 , Java Script</p>
+                        <p>HTML5, CSS3, JavaScript</p>
                     </div>
-                    <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="# "><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    <div class="live-github"> 
+                        <a href="https://sribalajiinstitution.in/"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
+                        <a href="https://github.com/MANIKANTAv6264/clg-website"><i class="bi bi-github"></i><span>Github Repository</span></a>
                     </div>
                 </div>
 
                 <div class="portfolio-details">
                     <p class="numb">02</p>
-                    <h3>Frontend Project</h3>
-                    <p>qwertyuiop   qwertyuiopqwertyuio ssedrftvgb sedrctvzw4xctfvygex5c vgu4wzexcfyvgu4se5drtyuhiedrftgyhifvg</p>
+                    <h3>Data Analysis Project</h3>
+                    <p>Analyzed a large grocery shopping dataset to identify purchasing trends across different age groups. Used Python (Pandas, NumPy, Matplotlib) for data cleaning, analysis, and visualization. The project highlighted which age group purchased the most items, helping to understand customer behavior and support business decision-making.</p>
                     <div class="tech">
-                        <p>HTML5 , CSS3 , Java Script</p>
+                        <p>Python</p>
                     </div>
-                    <div class="live-github">
-                        <a herf="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a herf="#"><i class='bx bxl-github'></i></a>
+                    <div class="live-github"> 
+                        <a href="#"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
+                        <a href="https://github.com/MANIKANTAv6264/Data-Analysis"><i class="bi bi-github"></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-details">
+                    <p class="numb">03</p>
+                    <h3>Backend Project</h3>
+                    <p>Developed a Python-based chatbot powered by the Groq API. The chatbot processes user input through text/voice and stores previous conversations to deliver more accurate, context-aware responses. Designed to simulate natural interactions, it demonstrates memory-based conversational AI.</p>
+                    <div class="tech">
+                        <p>Python , JS</p>
+                    </div>
+                    <div class="live-github"> 
+                        <a href="#"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
+                        <a href="https://github.com/MANIKANTAv6264/AI-ChatBot.git"><i class="bi bi-github"></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-details">
+                    <p class="numb">04</p>
+                    <h3>Full Stack Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore illo nisi architecto eaque consequatur et exercitationem. Sint nemo eos delectus ratione officiis harum laborum atque aut sunt, voluptatem vitae.</p>
+                    <div class="tech">
+                        <p>MongoDB, Express.js, AngularJS, Node.js</p>
+                    </div>
+                    <div class="live-github"> 
+                        <a href="#"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
+                        <a href="#"><i class="bi bi-github"></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-details">
+                    <p class="numb">05</p>
+                    <h3>Frontend Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore illo nisi architecto eaque consequatur et exercitationem. Sint nemo eos delectus ratione officiis harum laborum atque aut sunt, voluptatem vitae.</p>
+                    <div class="tech">
+                        <p>HTML5, CSS3, JavaScript</p>
+                    </div>
+                    <div class="live-github"> 
+                        <a href="#"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
+                        <a href="#"><i class="bi bi-github"></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-details">
+                    <p class="numb">06</p>
+                    <h3>Frontend Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore illo nisi architecto eaque consequatur et exercitationem. Sint nemo eos delectus ratione officiis harum laborum atque aut sunt, voluptatem vitae.</p>
+                    <div class="tech">
+                        <p>HTML5, CSS3, JavaScript</p>
+                    </div>
+                    <div class="live-github"> 
+                        <a href="#"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
+                        <a href="#"><i class="bi bi-github"></i><span>Github Repository</span></a>
                     </div>
                 </div>
             </div>
+
             <div class="portfolio-box">
+                <!--  images carousel  -->
                 <div class="portfolio-carousel">
                     <div class="img-slide">
                         <div class="img-item">
-                            <img src="./profile_1.jpg" alt="portfolio-1" >
+                            <img src="./work-1.jpg">
                         </div>
                         <div class="img-item">
-                            <img src="./profile_2.jpg" alt="portfolio-2" >
+                            <img src="./Project_2.png">
                         </div>
-                        
+                        <div class="img-item">
+                            <img src="./AI-Chatbot.jpg">
+                        </div>
+                        <div class="img-item">
+                            <img src="./portfolio-5.jpg">
+                        </div>
+                        <div class="img-item">
+                            <img src="./portfolio-5.jpg">
+                        </div>
+                        <div class="img-item">
+                            <img src="./portfolio-5.jpg">
+                        </div>
                     </div>
-            </div>
-            <div class="navigation">
-                <button class="arrow-left disabled"><i class='bx bx-chevron-left'></i></button>
-                <button class="arrow-right"><i class='bx bx-chevron-right'></i></button>
-            </div>
+                </div>
+
+                <div class="navigation">
+                    <button class="arrow-left disabled" title="left-arrow"><i class="bi bi-chevron-left"></i> </button>
+                    <button class="arrow-right" title="right-arrow"><i class="bi bi-chevron-right"></i></button>
+                </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="contact-section" id="contact">
-            <div class="contact-info">
-                <h1>Let's <span>Work Together</span></h1>
-                <p><img src="./telephone-fill.svg"> (+91) 9346478480 </p>
-                <p><img src="./envelope-fill.svg"> manikantavanapalli6264@gmail.com</p>
-                <p><img src="./geo-alt-fill.svg"> 5-109/4, Rajucheruvu, pendurthi, Vishakapatnam, andhraPradesh, India</p>
-            </div>
+    <!----- Contact-Section -------->
+    <section class="contact" id="contact">
         <div class="contact-container">
-    <h1>Contact <span>Me</span></h1>
-    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-        <!-- Web3Forms Access Key -->
-        <input type="hidden" name="access_key" value="32d8d196-9b6a-4f3c-88be-49090e21f74b">
+            <div class="contact-box">
+                <h2>Let's Work Together</h2>
+                <p class="desc">I’m always open to new opportunities, collaborations, and exciting projects. Whether you have a question, an idea, or just want to say hello, feel free to reach out—I’d be happy to connect.</p>
+                <div class="contact-detail">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div class="detail">
+                        <p>Phone</p>
+                        <p>(+91) 9346478480</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class="bi bi-envelope-fill"></i>
+                    <div class="detail">
+                        <p>Email</p>
+                        <p>manikantavanapalli6264@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <div class="detail">
+                        <p>Address</p>
+                        <p>5-109/4, Rajucheruvu, pendurthi, Vishakapatnam, andhraPradesh, India</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="input-group">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        </div>
+            <div class="contact-box">
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                 <!-- Web3Forms Access Key -->
+                   <input type="hidden" name="access_key" value="32d8d196-9b6a-4f3c-88be-49090e21f74b">
+                   <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <div class="input-group">
-        <input type="text" name="subject" placeholder="Subject" required>
-        <input type="tel" name="phone" placeholder="Your Phone Number" required>
-        </div>
-
-        <textarea name="message" placeholder="Your Message" required></textarea>
+                    <div class="field-box">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="tel" name="phone" placeholder=" Phone Number" required>
+                        <input type="text" name="subject" placeholder="Email Subject" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
 
         <!-- Honeypot for bot protection -->
-        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
         <!-- Optional: Redirect to thank you page -->
         <!-- <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you.html"> -->
 
-        <button type="submit">Submit</button>
-    </form>
-    </div>
-
-
-
-
-
-
-
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
         </div>
+
     </section>
 
     <script>
@@ -297,66 +478,68 @@
             link.click();
             document.body.removeChild(link);
         }
-        function showContent(section) {
-            document.querySelectorAll('.resume-content').forEach(el => el.style.display = 'none');
-            document.getElementById(section).style.display = 'block';
-        }
 
         const resumeBtns = document.querySelectorAll('.resume-btn');
             resumeBtns.forEach((btn , idx) => {
-    btn.addEventListener('click', () => {
-        const resumeDetails = document.querySelectorALL('.resume-details');
-        resumeBtns.forEach(btn =>{
-            btn.classList.remove('active');
+                btn.addEventListener('click', () => {
+                    const resumeDetails = document.querySelectorAll('.resume-content');
+
+                    resumeBtns.forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    btn.classList.add('active');
+
+                    resumeDetails.forEach(detail => {
+                        detail.classList.remove('active');
+                    });
+                    resumeDetails[idx].classList.add('active');
+            });
         });
-        btn.classList.add('active');
-        resumeDetails.forEach(details =>{
-            details.classList.remove('active');
+
+        const arrowRight = document.querySelector('.portfolio-box .navigation .arrow-right');
+        const arrowLeft = document.querySelector('.portfolio-box .navigation .arrow-left');
+
+        let index = 0;
+
+        const activePortfolio = () => {
+            const imgSlide = document.querySelector('.portfolio-carousel .img-slide');
+
+            const portfolioDetails = document.querySelectorAll('.portfolio-details');
+
+            imgSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 2}rem))`;
+
+            portfolioDetails.forEach(detail => {
+                detail.classList.remove('active');
+            });
+            portfolioDetails[index].classList.add('active');
+        }
+
+
+
+
+        arrowRight.addEventListener('click',() => {
+            if(index < 1){
+                index++;
+                arrowLeft.classList.remove('disabled');
+            }
+            else{
+                index = 2;
+                arrowRight.classList.add('disabled');
+            }
+            activePortfolio();
         });
-        resumeDetails[idx].classList.add('active');
-    });
-    });
 
-    const arrowRight= document.querySelector('.portfolio-box .navigation .arrow-right');
-    const arrowLeft= document.querySelector('.portfolio-box .navigation .arrow-left');
-    let index = 0;
-    const activePortfolio = () => {
-        const imgSlide = document.querySelector('.portfolio-carousel .img-slide');
-        const portfolioDetails = document.querySelectorAll('.portfolio-detail')
-
-        imgSlide.style.transform = 'translateX(calc(${index * -100}% - ${index * 2}rem))';
-        portfolioDetails.forEach(detail =>{
-            detail.classList.remove('active');
+        arrowLeft.addEventListener('click',() => {
+            if(index > 1){
+                index--;
+                arrowRight.classList.remove('disabled');
+            }
+            else{
+                index = 0;
+                arrowLeft.classList.add('disabled');
+            }
+            activePortfolio();
         });
-        portfolioDetails[index].classList.add('active');
-    }
-
-
-
-
-    arrowRight.addEventListener('click',() => {
-        if(index < 4){
-            index++;
-            arrowLeft.classList.remove('disabled');
-        }
-        else{
-            index = 5;
-            arrowRight.classList.add('disabled');
-        }
-        activePortfolio();
-    });
-
-    arrowLeft.addEventListener('click',() => {
-        if(index > 1){
-            index--;
-            arrowRight.classList.remove('disabled');
-        }
-        else{
-            index = 0;
-            arrowLeft.classList.add('disabled');
-        }
-        activePortfolio();
-    });
     </script>
     
 
