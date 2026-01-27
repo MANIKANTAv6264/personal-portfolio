@@ -12,24 +12,33 @@
 <body>
     <nav>
         <h1 class="logo">Mani<span class="green">.</span></h1>
-        <img src="/bx-menu.svg" class="menu-icon" alt="Menu" id="menu-icon">
         <div class="nav-links">
             <a href="#home" id="home-link" class="active">Home</a>
-            <a href="#about-me" id="resume-link">About me</a>            
-            <a href="#services" id="services-link">Services</a>        
-            <a href="#portfolio" id="portfolio-link">Portfolio</a>     
+            <a href="#about-me" id="resume-link" >About me</a>            
+            <a href="#services" id="services-link" >Services</a>        
+            <a href="#portfolio" id="portfolio-link" >Portfolio</a>     
             <a href="#contact">Contact</a>                             
             <!------------------------------------<    button>  HIRE ME </button     >-------------- IF REQUIRED ------------>
         </div>
+
+        <button class="menu-icon" onclick="toggleSidebar()"><i class="bi bi-list"></i></button>
     </nav>
-    
-    <section id="home" class="home ">
+    <!-- Sidebar (Initially Hidden for Small Screens) -->
+    <div class="sidebar" id="sidebar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about-me">About me</a>      
+        <a href="#services">Services</a>
+        <a href="#portfolio" id="portfolio-link">Portfolio</a>     
+        <a href="#contact">Contact</a>                             
+    </div> 
+
+    <section id="home" class="home active">
         <div class="container">
-                    <div class="content">
+        <div class="content">
             <div class="home-text">
                 <h1><span>Manikanta</span> Vanapalli</h1>
                 <h2>I'm a 
-                    <span style="--i:4;" data-text="Programmer">Programmer</span>
+                    <span style="--i:4;" data-text="Trader">Trader</span>
                     <span style="--i:3;" data-text="Developer">Developer</span>
                     <span style="--i:2;" data-text="Data Anylist">Data Anylist</span>
                     <span style="--i:1;" data-text="Web Designer">Web Designer</span>
@@ -46,6 +55,7 @@
                 </div>
             </div>
         </div>
+
         <div class="home-img">
             <div class="img-box">
                 <div class="img-item">
@@ -146,32 +156,32 @@
                         <div class="resume-item">
                             <h4>Data Science</h4>
                             <p>IBM</p>
-                            <a href="Data Science ,AI & Development.pdf">certificate</a><!------------------->
+                            <a href="Data Science ,AI & Development.pdf" target="_blank">certificate</a><!------------------->
                         </div><!-------------------------------------------->
                         <div class="resume-item">
                             <h4>Data Visulization</h4>
                             <p>IBM</p>
-                            <a href="data visulization certificate.pdf">certificate</a><!------------------->
+                            <a href="data visulization certificate.pdf" target="_blank">certificate</a><!------------------->
                         </div><!-------------------------------------------->
                         <div class="resume-item">
                             <h4>Data Analysis</h4>
                             <p>GOOGLE</p>
-                            <a href="Data Analysis With R Programming.pdf">certificate</a><!------------------->
+                            <a href="Data Analysis With R Programming.pdf" target="_blank">certificate</a><!------------------->
                         </div><!-------------------------------------------->
                         <div class="resume-item">
                             <h4>NoSql Database</h4>
                             <p>EduSkills</p>
-                            <a href="No sql database.PDF">certificate</a><!------------------->
+                            <a href="No sql database.PDF" target="_blank">certificate</a><!------------------->
                         </div><!-------------------------------------------->
                         <div class="resume-item">
                             <h4>Devops</h4>
                             <p>IBM</p>
-                            <a href="Devops.pdf">certificate</a><!------------------->
+                            <a href="Devops.pdf" target="_blank">certificate</a><!------------------->
                         </div><!-------------------------------------------->
                         <div class="resume-item">
                             <h4>Node JS</h4>
                             <p>INFOSYS</p>
-                            <a href="Node.JS.PDF">certificate</a><!------------------->
+                            <a href="Node.JS.PDF" target="_blank">certificate</a><!------------------->
                         </div><!-------------------------------------------->
                     </div>
                 </div>
@@ -196,11 +206,6 @@
                             <span>JavaScript</span>
                         </div>
                         <div class="resume-item">
-                            <i class="fab fa-react"></i>
-
-                            <span>React.js</span>
-                        </div>
-                        <div class="resume-item">
                             <i class="fab fa-python"></i>
 
                             <span>Python</span>
@@ -221,11 +226,11 @@
                             <span>Linux</span>
                         </div> 
                         <div class="resume-item">
-                            <i class="fab fa-css3-alt"></i>
+                            10<i class="fab fa-css3-alt"></i>
 
                             <span>CSS3</span>
                         </div>
-                         <div class="resume-item">
+                        <div class="resume-item">
                             <i class="fa-solid fa-database"></i>
 
                             <span>SQL</span>
@@ -332,7 +337,7 @@
                     <h3>Backend Project</h3>
                     <p>Developed a Python-based chatbot powered by the Groq API. The chatbot processes user input through text/voice and stores previous conversations to deliver more accurate, context-aware responses. Designed to simulate natural interactions, it demonstrates memory-based conversational AI.</p>
                     <div class="tech">
-                        <p>Python , JS</p>
+                        <p>Python, JS</p>
                     </div>
                     <div class="live-github"> 
                         <a href="#"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
@@ -342,10 +347,10 @@
 
                 <div class="portfolio-details">
                     <p class="numb">04</p>
-                    <h3>Full Stack Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore illo nisi architecto eaque consequatur et exercitationem. Sint nemo eos delectus ratione officiis harum laborum atque aut sunt, voluptatem vitae.</p>
+                    <h3>Live Object Search AI Assistant</h3>
+                    <p>Built a real-time computer vision assistant using YOLOv3 for object detection and Groq LLMs for contextual knowledge retrieval. Integrated non-blocking input handling, speech synthesis, and dynamic prompt engineering to deliver accurate, internet-based answers related to detected objects while maintaining continuous video streaming.</p>
                     <div class="tech">
-                        <p>MongoDB, Express.js, AngularJS, Node.js</p>
+                        <p>Python, OpenCV, YOLOv3</p>
                     </div>
                     <div class="live-github"> 
                         <a href="#"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
@@ -385,16 +390,16 @@
                 <div class="portfolio-carousel">
                     <div class="img-slide">
                         <div class="img-item">
-                            <img src="./work-1.jpg">
+                            <img src="./college_proj.jpeg">
                         </div>
                         <div class="img-item">
-                            <img src="./Project_2.png">
+                            <img src="./data_analysis.jpeg">
                         </div>
                         <div class="img-item">
-                            <img src="./AI-Chatbot.jpg">
+                            <img src="./chat_bot.jpeg">
                         </div>
                         <div class="img-item">
-                            <img src="./portfolio-5.jpg">
+                            <img src="./yolov8_compressed.jpg">
                         </div>
                         <div class="img-item">
                             <img src="./portfolio-5.jpg">
@@ -437,7 +442,7 @@
                     <i class="bi bi-geo-alt-fill"></i>
                     <div class="detail">
                         <p>Address</p>
-                        <p>5-109/4, Rajucheruvu, pendurthi, Vishakapatnam, andhraPradesh, India</p>
+                        <p>5-109/4, Rajucheruvu, Pendurthi, Vishakapatnam, AndhraPradesh, India , 531173</p>
                     </div>
                 </div>
             </div>
@@ -472,12 +477,76 @@
     <script>
         function downloadResume() {
             const link = document.createElement('a');
-            link.href = 'manikanta_resume.pdf';
-            link.download = 'Manikanta_Vanapalli_Resume.pdf';
+            link.href = 'manikanta_resume-1.pdf';
+            link.download = 'Manikanta_Resume.pdf';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
         }
+
+        const navlinks = document.querySelectorAll('nav .nav-links a');
+
+        const activePage = () => {
+            navlinks.forEach(link => {
+                link.classList.remove('active');
+            });
+        }
+
+        navlinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                if (!link.classList.contains('active')) {
+                    activePage();
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Add scroll event listener to update active nav & sidebar links based on section in view
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            // Update top nav links
+            navlinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') && link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Update sidebar links (if present)
+            const sidebarLinks = document.querySelectorAll('.sidebar a');
+            sidebarLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') && link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Sidebar link click behaviour: set active class and close sidebar
+        const sidebarLinks = document.querySelectorAll('.sidebar a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // mark clicked link active
+                sidebarLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+
+                // close sidebar after click (if it's open)
+                const sidebar = document.getElementById('sidebar');
+                if (sidebar && sidebar.classList.contains('show')) {
+                    toggleSidebar();
+                }
+            });
+        });
 
         const resumeBtns = document.querySelectorAll('.resume-btn');
             resumeBtns.forEach((btn , idx) => {
@@ -518,12 +587,12 @@
 
 
         arrowRight.addEventListener('click',() => {
-            if(index < 1){
+            if(index < 2){
                 index++;
                 arrowLeft.classList.remove('disabled');
             }
             else{
-                index = 2;
+                index = 3;
                 arrowRight.classList.add('disabled');
             }
             activePortfolio();
@@ -540,8 +609,80 @@
             }
             activePortfolio();
         });
+
+
+
+    // Removed stale menu-icon listener (menu button uses inline onclick to call toggleSidebar)
+
+
+
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const menuIcon = document.querySelector(".menu-icon i");
+
+    if (sidebar.classList.contains("show")) {
+        sidebar.classList.remove("show");
+        menuIcon.classList.remove("bi-x-lg");
+        menuIcon.classList.add("bi-list");
+    } else {
+        sidebar.classList.add("show");
+        menuIcon.classList.remove("bi-list");
+        menuIcon.classList.add("bi-x-lg");
+    }
+}
+
+// Close sidebar when clicking outside
+document.addEventListener("click", function(event) {
+    const sidebar = document.getElementById("sidebar");
+    if (sidebar.classList.contains("show") && !sidebar.contains(event.target) && !event.target.closest(".menu-icon")) {
+        toggleSidebar();
+    }
+});
     </script>
     
+<!-- 1px YouTube iframe (audio only) --
+<div id="about-audio-wrapper" style="width:1px; height:1px; overflow:hidden;">
+  <iframe
+    id="about-audio-player"
+    width="1"
+    height="1"
+    src="https://www.youtube.com/embed/Z6p38T79Kfs?enablejsapi=1&autoplay=0&controls=0"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+  ></iframe>
+</div>
+
+<!-- YouTube API --
+//<script src="https://www.youtube.com/iframe_api"></script>
+
+<!-- Logic: play when About visible --
+<script>
+  let aboutPlayer;
+
+  function onYouTubeIframeAPIReady() {
+    aboutPlayer = new YT.Player('about-audio-player');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const aboutSection = document.getElementById('about-me'); // id match ayyaali
+
+    if (!aboutSection) return;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!aboutPlayer) return;
+
+        if (entry.isIntersecting) {
+          aboutPlayer.playVideo();
+        } else {
+          aboutPlayer.pauseVideo();
+        }
+      });
+    }, { threshold: 0.6 });
+
+    observer.observe(aboutSection);
+  });
+</script-->
 
 
 </body>

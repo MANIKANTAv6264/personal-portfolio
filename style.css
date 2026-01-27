@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
     color: white;
 
 }
@@ -46,7 +46,9 @@ nav {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
+    box-shadow: 0px 0px 10px 1px rgba(34, 213, 14, 0.81);
+
 
 }
 
@@ -89,15 +91,120 @@ nav {
 .nav-links a:hover::after {
     width: 100%;
 }
-
-#menu-icon {
-    height: 2.2em;
-    display: none;
-}
-
-#home-link {
+nav .nav-links a.active {
     color: var(--main-color);
 }
+
+/* Menu Icon (Hidden on Large Screens) */
+.menu-icon {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* Hidden on large screens */
+    position: absolute;
+    right: 20px;
+    color: whitesmoke;
+}
+/* Sidebar (Initially Hidden for Small Screens) */
+.sidebar {
+    flex-direction: column;
+    position: fixed;
+    /* top: 9%;
+    right: -100%; */
+    top: -100%;
+    right: 0%;
+    width: 35%;
+    /* width: 140px; */
+    height: fit-content;
+    background-color: #1f242d;
+    /* background-color: rgb(41, 43, 53) ; */
+   /* background:var(--bg-color); */;
+   /* rgba(255, 255, 255, 0.123); */
+    box-shadow: 0px 0px 10px 1px rgba(34, 213, 14, 0.81);
+    border-radius: 0px 0 1px 62px; 
+    padding: 10px;
+    z-index: 99;/* z-index: 999; */ 
+    transition: top 0.65s ease-in-out; /* transition: top 0.65s ease-in-out; */ /* Smooth slide-in effect */
+
+}
+.sidebar.show {
+    top: 70px; /* right: 0;*/ /* When toggled, slide in */    
+}
+
+/* Sidebar Buttons */
+.sidebar a {
+    text-decoration: none;
+    display: block;
+    color: var(--main-color);
+    padding: 12px;
+    font-size: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    /* background-color: var(--main-color) */
+   background-color: var(--disable-color);
+    color: white;
+}
+
+/* Active state for sidebar links: show a '<' symbol before the active tab */
+.sidebar a.active {
+    color: var(--main-color);
+    background-color: rgba(124, 240, 61, 0.06); /* subtle highlight */
+}
+
+.sidebar a.active::before {
+    content: '<';
+    display: inline-block;
+    margin-right: 8px;
+    color: var(--main-color);
+    font-weight: 700;
+    transform: translateX(0);
+}
+
+.sidebar-dropdown-content{
+    display: none;
+    padding-left: 20px;
+}
+.sidebar-dropdown-btn{
+    cursor: pointer;
+    display: block;
+    padding: 12px;
+}
+.sidebar-dropdown-content a{
+    display: block;
+    padding: 8px;
+}
+/* Close Icon */
+.close-icon {
+    font-size: 3rem;
+    background: none;
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+    color: rgb(255, 253, 253);
+}
+sidebar a.active::after{
+    content: '<';
+    color: white;
+    font-size: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none; /* Hide normal buttons on small screens */
+    }
+
+    .menu-icon {
+        display: block; /* Show menu icon on small screens */
+    }
+}
+
 
 /*home section*/
 .container {
@@ -419,7 +526,15 @@ section.about-me {
     height: 10rem;
     overflow: visible;
 }
+.resume-content.courses .resume-item a{
+    margin-top: 0.7rem;
+    color: var(--main-color);
+    transition: .2s;
 
+}
+.resume-content.courses .resume-item a:hover{
+    color: whitesmoke;
+}
 .resume-content.courses .resume-item {
     position: relative;
     align-items: center;
@@ -676,6 +791,8 @@ section.about-me {
     height: 20rem;
     border-radius: 0.7rem;
     overflow: hidden;
+    /* box-shadow: 0px 0px 10px 1px rgba(34, 213, 14, 0.81); */
+
 }
 
 .portfolio-carousel .img-slide {
@@ -809,7 +926,8 @@ section.about-me {
 
 .contact-box .field-box input:focus,
 .contact-box .field-box textarea:focus {
-    border-color:var(--main-color);
+    box-shadow: 0px 0px 10px 1px rgba(34, 213, 14, 0.81);
+    /* border-color:var(--main-color); */
     outline: none;
 }
 
@@ -817,4 +935,229 @@ section.about-me {
     margin-top: 1rem;
     cursor: pointer;
 }
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 5%;
+    height: 70px;
+
+    
+  }
+  .container,
+  .resume-container,
+  .services-container,
+  .portfolio-container,
+  .contact-container {
+    display: block;
+    padding: 8px 4px;
+    grid-template-columns: 1fr !important; /* For grids */
+    margin-top: 40px;
+
+  }
+  .home-img .img-box,
+  .home-img .img-item img {
+    width: 100px;
+    height: 100px;
+  }
+  h1, h2, h3 {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin-top: 0.5rem;
+  }
+  .nav-links a {
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+  .menu-icon {
+    display: block; 
+  }
+}
+/* Responsive Home Section */
+@media (max-width: 768px) {    
+
+  .home .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 19px;
+    height: auto; 
+  }
+
+  .home .content {
+    width: 100% !important;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    order: 2
+  }
+
+  .home-text h1 {
+    font-size: 2rem; /* Smaller font on mobile */
+  }
+
+  .home-text h2 {
+    font-size: 1.4rem;
+    margin-top: 15px;
+  }
+
+  .home-text p {
+    font-size: 1rem;
+    margin: 2em 0;
+  }
+
+.home .home-img {
+    order: 1; 
+    width: 100%;
+   
+    display: block;
+  }
+
+  .home-img .img-box {
+    width: 250px; /* Smaller image size on mobile */
+    height: 250px;
+    margin: 30% auto 5%;
+
+  }
+
+  .home-img .img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .home-icons{
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+.icon a{
+    margin-right: 18px;
+  }
+}
+
+/* Responsive about Section */
+@media (max-width: 768px) {
+  /* Adjust skills container grid for 2 columns */
+  .resume-content.skills .resume-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 skills per row */
+    gap: 1rem;
+    height: auto; /* allow flexible height */
+    overflow: visible;
+  }
+
+  /* Adjust individual skill item styles */
+  .resume-content.skills .resume-item {
+    height: auto;
+    padding: 12px;
+    border-radius: 0.8rem;
+    margin-bottom: 12px;
+  }
+  .heading{
+    margin-bottom: 0px;
+    margin-top: 15%;
+  }
+  .services-box{
+    margin-bottom: 15px;
+  }
+  .courses{
+    margin-bottom: 25%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contact-container {
+    display: block;
+    padding: 8px 4px;
+    width: 100%;
+  }
+  .contact-box {
+    width: 100%;
+    margin-bottom: 14px;
+  }
+  .contact-box form {
+    padding: 0.5rem; /* Reduce for mobile */
+    margin-top: 3rem;
+  }
+  .contact-box .field-box {
+    display: block;
+    grid-template-columns: none;
+    gap: 0;
+  }
+  .contact-box .field-box input,
+  .contact-box .field-box textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* Home section tweaks */
+  .home .img-box {
+    width: 300px; /* adjust smaller for tablets */
+    height: 300px;
+  }
+
+  /* About skills - 2 columns on tablets */
+  .resume-content.skills .resume-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    height: auto; /* prevent clipping */
+  }
+
+  /* Tabs buttons layout - 2 columns */
+  .tab-buttons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* Contact padding adjustment */
+  .contact-container {
+    gap: 1rem;
+    padding: 20px 10px;
+  }
+
+  .contact-box form {
+    padding: 1rem;
+  }
+
+}
+
+/* For large desktops */
+@media (min-width: 1201px) {
+  .home .img-box {
+    width: 350px;
+    height: 350px;
+  }
+  .resume-content.skills .resume-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tab-buttons {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+  }
+  .contact-container {
+    gap: 2rem;
+    padding: 40px 0;
+  }
+  .contact-box form {
+    padding: 1.5rem 2rem;
+  }
+}
+
+
 
