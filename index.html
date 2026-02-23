@@ -353,14 +353,14 @@
                         <p>Python, OpenCV, YOLOv3</p>
                     </div>
                     <div class="live-github"> 
-                        <a href="#"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
+                        <a href="https://github.com/MANIKANTAv6264/intelligent-object-detection"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
                         <a href="https://github.com/MANIKANTAv6264/intelligent-object-detection"><i class="bi bi-github"></i><span>Github Repository</span></a>
                     </div>
                 </div>
 
                 <div class="portfolio-details">
                     <p class="numb">05</p>
-                    <h3>Frontend Project</h3>
+                    <h3>Trade Analysis</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore illo nisi architecto eaque consequatur et exercitationem. Sint nemo eos delectus ratione officiis harum laborum atque aut sunt, voluptatem vitae.</p>
                     <div class="tech">
                         <p>HTML5, CSS3, JavaScript</p>
@@ -402,7 +402,7 @@
                             <img src="./yolov8_compressed.jpg">
                         </div>
                         <div class="img-item">
-                            <img src="./portfolio-5.jpg">
+                            <img src="./trading.jpg">
                         </div>
                         <div class="img-item">
                             <img src="./portfolio-5.jpg">
@@ -587,12 +587,12 @@
 
 
         arrowRight.addEventListener('click',() => {
-            if(index < 2){
+            if(index < 3){
                 index++;
                 arrowLeft.classList.remove('disabled');
             }
             else{
-                index = 3;
+                index = 4;
                 arrowRight.classList.add('disabled');
             }
             activePortfolio();
@@ -639,51 +639,5 @@ document.addEventListener("click", function(event) {
     }
 });
     </script>
-    
-<!-- 1px YouTube iframe (audio only) --
-<div id="about-audio-wrapper" style="width:1px; height:1px; overflow:hidden;">
-  <iframe
-    id="about-audio-player"
-    width="1"
-    height="1"
-    src="https://www.youtube.com/embed/Z6p38T79Kfs?enablejsapi=1&autoplay=0&controls=0"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-  ></iframe>
-</div>
-
-<!-- YouTube API --
-//<script src="https://www.youtube.com/iframe_api"></script>
-
-<!-- Logic: play when About visible --
-<script>
-  let aboutPlayer;
-
-  function onYouTubeIframeAPIReady() {
-    aboutPlayer = new YT.Player('about-audio-player');
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const aboutSection = document.getElementById('about-me'); // id match ayyaali
-
-    if (!aboutSection) return;
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (!aboutPlayer) return;
-
-        if (entry.isIntersecting) {
-          aboutPlayer.playVideo();
-        } else {
-          aboutPlayer.pauseVideo();
-        }
-      });
-    }, { threshold: 0.6 });
-
-    observer.observe(aboutSection);
-  });
-</script-->
-
-
 </body>
 </html>
