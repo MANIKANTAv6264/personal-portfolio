@@ -14,16 +14,14 @@
         <h1 class="logo">Mani<span class="green">.</span></h1>
         <div class="nav-links">
             <a href="#home" id="home-link" class="active">Home</a>
-            <a href="#about-me" id="resume-link" >About me</a>            
-            <a href="#services" id="services-link" >Services</a>        
-            <a href="#portfolio" id="portfolio-link" >Portfolio</a>     
+            <a href="#about-me" id="resume-link">About me</a>            
+            <a href="#services" id="services-link">Services</a>        
+            <a href="#portfolio" id="portfolio-link">Portfolio</a>     
             <a href="#contact">Contact</a>                             
-            <!------------------------------------<    button>  HIRE ME </button     >-------------- IF REQUIRED ------------>
         </div>
-
         <button class="menu-icon" onclick="toggleSidebar()"><i class="bi bi-list"></i></button>
     </nav>
-    <!-- Sidebar (Initially Hidden for Small Screens) -->
+
     <div class="sidebar" id="sidebar">
         <a href="#home" class="active">Home</a>
         <a href="#about-me">About me</a>      
@@ -43,9 +41,8 @@
                     <span style="--i:2;" data-text="Data Anylist">Data Anylist</span>
                     <span style="--i:1;" data-text="Web Designer">Web Designer</span>
                 </h2>
-                <p class="">A passionate Data Analyst and Web Developer who loves transforming data into meaningful insights and building intuitive web applications.   I specialize in data analysis, data visualization, and responsive web design always learning, always building.</p>
+                <p>A passionate Data Analyst and Web Developer who loves transforming data into meaningful insights and building intuitive web applications. I specialize in data analysis, data visualization, and responsive web design — always learning, always building.</p>
             </div>
-
             <div class="home-icons">
                 <button class="btn" onclick="downloadResume()">Download Resume</button>
                 <div class="icon">
@@ -55,194 +52,435 @@
                 </div>
             </div>
         </div>
-
         <div class="home-img">
             <div class="img-box">
                 <div class="img-item">
-                    <img src="./profile-PIC.png" >
+                    <img src="./profile-PIC.png">
                 </div>
             </div>
         </div>  
         </div>
-  
     </section>
-<!----------------------------------------About section------------------------> 
-    <section class="about-me " id="about-me">
+
+    <!----------------------------------------About section------------------------>
+    <section class="about-me" id="about-me">
         <div class="resume-container">
             <div class="resume-box">
                 <h2>Why Hire Me?</h2>
-                <p class="desc">“Hire me if you're looking for someone who can think with data, design with purpose, and deliver with passion.”</p>
-                <button class="resume-btn active">About Me</button>
-                <button class="resume-btn">Education</button>
-                <button class="resume-btn">Courses</button>
-                <button class="resume-btn">Skills</button>
-                <!--<button class="resume-btn">Hobbies</button>-->
+                <p class="desc">"Hire me if you're looking for someone who can think with data, design with purpose, and deliver with passion."</p>
+                <!-- MODIFICATION 1: Removed "Courses", added "Others" as 6th tab -->
+                <button class="resume-btn active" data-target="about-me-content">About Me</button>
+                <button class="resume-btn" data-target="education">Education</button>
+                <button class="resume-btn" data-target="skills">Skills</button>
+                <button class="resume-btn" data-target="hobbies">Hobbies</button>
+                <button class="resume-btn" data-target="achievements">Achievements</button>
+                <button class="resume-btn" data-target="others">Others</button>
             </div>
             <div class="resume-box">
-                <div class="resume-content about-me active">
+
+                <!-- ABOUT ME -->
+                <div class="resume-content about-me-content active">
                     <h2 class="heading">About <span>Me</span></h2>
                     <p class="desc">I'm Manikanta Vanapalli, a passionate Data Analyst and Web Developer from Vishakapatnam. I specialize in transforming raw data into meaningful insights and creating responsive, user-friendly websites. With hands-on experience and a love for tech, I'm always exploring new ways to build, learn, and grow.</p>
                     <div class="resume-list">
-                        <div class="resume-item">
-                            <p>Name <span>Manikanta</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Gender <span>Male</span></p>
-                        </div>
-                         <div class="resume-item">
-                            <p>Age <span>20</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Status <span>Single</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>City <span>Vishakapatnam</span></p>
-                        </div>                         
-                        <div class="resume-item">
-                            <p>Nationality <span>India</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Experience <span>1 year</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Full Time <span>Yes</span></p>
-                        </div>                       
-                        <div class="resume-item">
-                            <p>Freelance <span>Available</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Phone Number <span>9346478480</span></p>
-                        </div>                        
-                        <div class="resume-item">
-                            <p>Email <span>manikantavanapalli6264@gmail.com</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Language <span>English</span></p>
-                        </div>
+                        <div class="resume-item hover-card"><p>Name <span>Manikanta</span></p></div>
+                        <div class="resume-item hover-card"><p>Gender <span>Male</span></p></div>
+                        <div class="resume-item hover-card"><p>Age <span>20</span></p></div>
+                        <div class="resume-item hover-card"><p>Status <span>Single</span></p></div>
+                        <div class="resume-item hover-card"><p>City <span>Vishakapatnam</span></p></div>
+                        <div class="resume-item hover-card"><p>Nationality <span>India</span></p></div>
+                        <div class="resume-item hover-card"><p>Experience <span>1 year</span></p></div>
+                        <div class="resume-item hover-card"><p>Full Time <span>Yes</span></p></div>
+                        <div class="resume-item hover-card"><p>Freelance <span>Available</span></p></div>
+                        <div class="resume-item hover-card"><p>Phone Number <span>9346478480</span></p></div>
+                        <div class="resume-item hover-card"><p>Email <span>manikantavanapalli6264@gmail.com</span></p></div>
+                        <div class="resume-item hover-card"><p>Language <span>English</span></p></div>
                     </div>
                 </div>
 
+                <!-- EDUCATION -->
                 <div class="resume-content education">
                     <h2 class="heading">My <span>Education</span></h2>
-                    <p class="desc">I’ve pursued my education with a strong focus on technology and problem-solving. Currently, I'm pursuing a B.Tech at Avanthi Institutions (2022–2026), where I’ve developed my core skills in data and development. Prior to that, I completed my Intermediate at Sri Balaji Junior College and my SSC from Govt High School PDT, building a solid foundation for my technical journey.</p>
+                    <p class="desc">I've pursued my education with a strong focus on technology and problem-solving. Currently pursuing a B.Tech at Avanthi Institutions (2022–2026), where I've developed my core skills in data and development.</p>
                     <div class="resume-list">
-                        <div class="resume-item">
+                        <div class="resume-item hover-card">
                             <p class="year">2022-2026</p>
                             <h3>B-tech</h3>
                             <p class="company">Avanthi Institutions</p>
                             <p>Pursuing B.Tech in Data Science Engineering, building strong foundations in programming.</p>
                         </div>
-                        <div class="resume-item">
+                        <div class="resume-item hover-card">
                             <p class="year">2020-2022</p>
                             <h3>Intermediate</h3>
                             <p class="company">Sri Balaji Jnr College</p>
-                            <p>completed MPC(Maths, Physics, Chemistry) with focus on anlytical and logical skills.</p>
-                            <p>                                                                                    </p>
-                            <p>                                                                                    </p>
+                            <p>Completed MPC (Maths, Physics, Chemistry) with focus on analytical and logical skills.</p>
                         </div>
-                        <div class="resume-item">
+                        <div class="resume-item hover-card">
                             <p class="year">2020</p>
                             <h3>SSC</h3>
                             <p class="company">Govt High School PDT</p>
-                            <p>Completed secondary education with high score , developing strong fundamentals in maths and science.</p>
-                        </div> 
+                            <p>Completed secondary education with high score, developing strong fundamentals in maths and science.</p>
+                        </div>
                     </div>
                 </div>
-               
-                <div class="resume-content courses">
-                    <h2 class="heading">My <span>Courses</span></h2>
-                    <p class="desc">I'm a continuous learner who regularly explores new technologies and tools through online certifications. I stay updated with industry trends to sharpen my skills and deliver smart, modern solutions.</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <h4>Data Science</h4>
-                            <p>IBM</p>
-                            <a href="Data Science ,AI & Development.pdf" target="_blank">certificate</a><!------------------->
-                        </div><!-------------------------------------------->
-                        <div class="resume-item">
-                            <h4>Data Visulization</h4>
-                            <p>IBM</p>
-                            <a href="data visulization certificate.pdf" target="_blank">certificate</a><!------------------->
-                        </div><!-------------------------------------------->
-                        <div class="resume-item">
-                            <h4>Data Analysis</h4>
-                            <p>GOOGLE</p>
-                            <a href="Data Analysis With R Programming.pdf" target="_blank">certificate</a><!------------------->
-                        </div><!-------------------------------------------->
-                        <div class="resume-item">
-                            <h4>NoSql Database</h4>
-                            <p>EduSkills</p>
-                            <a href="No sql database.PDF" target="_blank">certificate</a><!------------------->
-                        </div><!-------------------------------------------->
-                        <div class="resume-item">
-                            <h4>Devops</h4>
-                            <p>IBM</p>
-                            <a href="Devops.pdf" target="_blank">certificate</a><!------------------->
-                        </div><!-------------------------------------------->
-                        <div class="resume-item">
-                            <h4>Node JS</h4>
-                            <p>INFOSYS</p>
-                            <a href="Node.JS.PDF" target="_blank">certificate</a><!------------------->
-                        </div><!-------------------------------------------->
-                    </div>
-                </div>
-                
-                <div class="resume-content skills" >
+
+                <!-- SKILLS -->
+                <div class="resume-content skills">
                     <h2 class="heading">My <span>Skills</span></h2>
-                    <p class="desc">I’m always learning and improving my skills through real-world projects and continuous practice. I focus on both technical and creative problem-solving to build efficient, modern solutions.</p>
+                    <p class="desc">I'm always learning and improving my skills through real-world projects and continuous practice.</p>
                     <div class="resume-list">
-                        <div class="resume-item">
-                            <i class="fab fa-html5"></i>
+                        <div class="resume-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                        <div class="resume-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                        <div class="resume-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                        <div class="resume-item"><i class="fab fa-python"></i><span>Python</span></div>
+                        <div class="resume-item"><i class="fab fa-git"></i><span>Git</span></div>
+                        <div class="resume-item"><i class="fab fa-github"></i><span>Github</span></div>
+                        <div class="resume-item"><i class="fab fa-linux"></i><span>Linux</span></div>
+                        <div class="resume-item"><i class="bi bi-fire"></i><span>Fire Base</span></div>
+                        <div class="resume-item"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+                    </div>
+                </div>
 
-                            <span>HTML5</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class="fab fa-css3-alt"></i>
+                <!-- HOBBIES -->
+                <div class="resume-content hobbies">
+                    <h2 class="heading">My <span>Hobbies</span></h2>
+                    <p class="desc">Beyond code, I'm a curious soul who loves to read, explore, and create. My hobbies keep me inspired and constantly learning something new every day.</p>
 
-                            <span>CSS3</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class="fab fa-js"></i>
+                    <div class="hobby-tabs">
+                        <button class="hobby-tab-btn active" data-hobby="books">
+                            <i class="fas fa-book-open"></i> Reading Books
+                        </button>
+                        <button class="hobby-tab-btn" data-hobby="browsing">
+                            <i class="fas fa-globe"></i> Browsing Net
+                        </button>
+                        <button class="hobby-tab-btn" data-hobby="coding">
+                            <i class="fas fa-code"></i> Coding
+                        </button>
+                        <button class="hobby-tab-btn" data-hobby="hobby-others">
+                            <i class="fas fa-heart"></i> Others
+                        </button>
+                    </div>
 
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class="fab fa-python"></i>
-
-                            <span>Python</span>
-                        </div>
-                        <div class="resume-item">
-                           <i class="fab fa-git"></i>
-
-                            <span>Git</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class="fab fa-github"></i>
-
-                            <span>Github</span>
-                        </div> 
-                        <div class="resume-item">
-                            <i class="fab fa-linux"></i>
-
-                            <span>Linux</span>
-                        </div> 
-                        <div class="resume-item">
-                             <i class="bi bi-fire"></i>
-
-                            <span>Fire Base</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class="fa-solid fa-database"></i>
-
-                            <span>SQL</span>
+                    <!-- Books -->
+                    <div class="hobby-panel active" id="hobby-books">
+                        <div class="hobby-grid">
+                            <div class="hobby-card book-card">
+                                <div class="book-cover">📘</div>
+                                <h4>Atomic Habits</h4>
+                                <p class="author">James Clear</p>
+                                <span class="tag completed">✓ Completed</span>
+                                <p class="note">Life-changing framework for building good habits and breaking bad ones.</p>
+                            </div>
+                            <div class="hobby-card book-card">
+                                <div class="book-cover">📗</div>
+                                <h4>In Distract Able</h4>
+                                <p class="author">Hunt & Thomas</p>
+                                <span class="tag completed">✓ Completed</span>
+                                <p class="note">Essential reading for every developer — from code craft to career.</p>
+                            </div>
+                            <div class="hobby-card book-card">
+                                <div class="book-cover">📙</div>
+                                <h4>Rich Dad Poor Dad</h4>
+                                <p class="author">Robert Kiyosaki</p>
+                                <span class="tag completed">✓ Completed</span>
+                                <p class="note">Shifted my perspective on money, investments, and financial freedom.</p>
+                            </div>
+                            <div class="hobby-card book-card">
+                                <div class="book-cover">📕</div>
+                                <h4>The Art Of Laziness</h4>
+                                <p class="author">Cal Newport</p>
+                                <span class="tag completed">✓ Completed</span>
+                                <p class="note">Mastering focused work in a distracted world — a must-read for developers.</p>
+                            </div>
+                            <div class="hobby-card book-card">
+                                <div class="book-cover">📒</div>
+                                <h4>The Art Of War</h4>
+                                <p class="author">Eric Matthes</p>
+                                <span class="tag completed">✓ Completed</span>
+                                <p class="note">My go-to guide for learning Python from scratch with real projects.</p>
+                            </div>
+                            <div class="hobby-card book-card">
+                                <div class="book-cover">📓</div>
+                                <h4>Can We Be Strangers Again</h4>
+                                <p class="author">Paulo Coelho</p>
+                                <span class="tag completed"> Reading</span>
+                                <p class="note">A beautiful story about following your dreams and listening to your heart.</p>
+                            </div>
                         </div>
                     </div>
-               </div>
-            </div>
-        </div>
-    </section>  
-<!--------------- Services section----------->
 
-    <section class="services " id="services">
+                    <!-- Browsing -->
+                    <div class="hobby-panel" id="hobby-browsing">
+                        <div class="hobby-grid">
+                            <div class="hobby-card browse-card">
+                                <div class="browse-icon"><i class="fas fa-brain"></i></div>
+                                <h4>Machine Learning with Scikit-learn</h4>
+                                <span class="tag recent">🔥 This Week</span>
+                                <p class="note">Exploring classification algorithms and model tuning techniques.</p>
+                            </div>
+                            <div class="hobby-card browse-card">
+                                <div class="browse-icon"><i class="fas fa-chart-line"></i></div>
+                                <h4>Advanced SQL Window Functions</h4>
+                                <span class="tag recent">🔥 Recently</span>
+                                <p class="note">Learned RANK(), DENSE_RANK(), LAG/LEAD for complex data analysis.</p>
+                            </div>
+                            <div class="hobby-card browse-card">
+                                <div class="browse-icon"><i class="fab fa-react"></i></div>
+                                <h4>React Hooks Deep Dive</h4>
+                                <span class="tag recent">🔥 This Month</span>
+                                <p class="note">useEffect, useContext, custom hooks — building reusable stateful logic.</p>
+                            </div>
+                            <div class="hobby-card browse-card">
+                                <div class="browse-icon"><i class="fas fa-server"></i></div>
+                                <h4>Docker & Containerization</h4>
+                                <span class="tag recent">🔥 This Month</span>
+                                <p class="note">Building, deploying, and managing containers for scalable apps.</p>
+                            </div>
+                            <div class="hobby-card browse-card">
+                                <div class="browse-icon"><i class="fas fa-robot"></i></div>
+                                <h4>Prompt Engineering for LLMs</h4>
+                                <span class="tag recent">🔥 Recently</span>
+                                <p class="note">Crafting effective prompts for AI tools to maximize productivity.</p>
+                            </div>
+                            <div class="hobby-card browse-card">
+                                <div class="browse-icon"><i class="fas fa-shield-alt"></i></div>
+                                <h4>Web Security Basics</h4>
+                                <span class="tag recent">🔥 Recently</span>
+                                <p class="note">SQL injection, XSS prevention, HTTPS, and secure coding practices.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coding Projects -->
+                    <div class="hobby-panel" id="hobby-coding">
+                        <div class="hobby-grid">
+                            <div class="hobby-card project-card">
+                                <div class="project-status-dot working"></div>
+                                <h4>Personal Portfolio Website</h4>
+                                <span class="tag wip">🚧 In Progress</span>
+                                <p class="note">Building a full-stack portfolio showcasing my projects, skills, and resume with dynamic content.</p>
+                                <div class="tech-stack">
+                                    <span>HTML</span><span>CSS</span><span>JS</span>
+                                </div>
+                            </div>
+                            <div class="hobby-card project-card">
+                                <div class="project-status-dot working"></div>
+                                <h4>Sales Data Dashboard</h4>
+                                <span class="tag wip">🚧 In Progress</span>
+                                <p class="note">Interactive dashboard with Python & Power BI to visualize regional sales performance and trends.</p>
+                                <div class="tech-stack">
+                                    <span>Python</span><span>Power BI</span><span>SQL</span>
+                                </div>
+                            </div>
+                            <div class="hobby-card project-card">
+                                <div class="project-status-dot planning"></div>
+                                <h4>Student Result Predictor</h4>
+                                <span class="tag planning">📋 Planning</span>
+                                <p class="note">ML model to predict student academic outcomes based on attendance, scores, and study patterns.</p>
+                                <div class="tech-stack">
+                                    <span>Python</span><span>Scikit-learn</span><span>Flask</span>
+                                </div>
+                            </div>
+                            <div class="hobby-card project-card">
+                                <div class="project-status-dot working"></div>
+                                <h4>Chat App with Firebase</h4>
+                                <span class="tag wip">🚧 In Progress</span>
+                                <p class="note">Real-time messaging app using Firebase Realtime Database with authentication and live updates.</p>
+                                <div class="tech-stack">
+                                    <span>JS</span><span>Firebase</span><span>CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hobby Others -->
+                    <div class="hobby-panel" id="hobby-hobby-others">
+                        <div class="hobby-grid">
+                            <div class="hobby-card other-card"><div class="other-icon">✈️</div><h4>Traveling</h4><p class="note">Exploring new places fuels my creativity and broadens my perspective on life.</p></div>
+                            <div class="hobby-card other-card"><div class="other-icon">🍳</div><h4>Cooking</h4><p class="note">Experimenting with recipes — cooking is just another form of creativity!</p></div>
+                            <div class="hobby-card other-card"><div class="other-icon">👥</div><h4>Family & Friends</h4><p class="note">Quality time with loved ones keeps me grounded and energized.</p></div>
+                            <div class="hobby-card other-card"><div class="other-icon">🎯</div><h4>Goal Setting</h4><p class="note">Regularly planning and reviewing goals to stay focused and driven.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ACHIEVEMENTS — MODIFICATION 1 & 2: Certifications moved here with horizontal scroll -->
+                <div class="resume-content achievements">
+                    <h2 class="heading">My <span>Achievements</span></h2>
+                    <p class="desc">Every milestone is a story of discipline, dedication, and growth. Here are some of my proudest achievements that have shaped me as a person and a professional.</p>
+
+                    <!-- MODIFICATION 2: Certifications - horizontal scroll, no wrap -->
+                    <div class="cert-scroll-section">
+                        <h3 class="cert-scroll-title"><i class="fas fa-certificate"></i> Certifications <span class="scroll-hint">← scroll →</span></h3>
+                        <div class="cert-scroll-track">
+                            <a href="Data Science ,AI & Development.pdf" target="_blank" class="cert-card hover-card">
+                                <div class="cert-icon"><i class="fas fa-flask"></i></div>
+                                <h4>Data Science</h4>
+                                <p>IBM</p>
+                                <span class="cert-open-label">Open PDF ↗</span>
+                            </a>
+                            <a href="data visulization certificate.pdf" target="_blank" class="cert-card hover-card">
+                                <div class="cert-icon"><i class="fas fa-chart-bar"></i></div>
+                                <h4>Data Visualization</h4>
+                                <p>IBM</p>
+                                <span class="cert-open-label">Open PDF ↗</span>
+                            </a>
+                            <a href="Data Analysis With R Programming.pdf" target="_blank" class="cert-card hover-card">
+                                <div class="cert-icon"><i class="fab fa-google"></i></div>
+                                <h4>Data Analysis</h4>
+                                <p>GOOGLE</p>
+                                <span class="cert-open-label">Open PDF ↗</span>
+                            </a>
+                            <a href="No sql database.PDF" target="_blank" class="cert-card hover-card">
+                                <div class="cert-icon"><i class="fas fa-database"></i></div>
+                                <h4>NoSQL Database</h4>
+                                <p>EduSkills</p>
+                                <span class="cert-open-label">Open PDF ↗</span>
+                            </a>
+                            <a href="Devops.pdf" target="_blank" class="cert-card hover-card">
+                                <div class="cert-icon"><i class="fas fa-cogs"></i></div>
+                                <h4>DevOps</h4>
+                                <p>IBM</p>
+                                <span class="cert-open-label">Open PDF ↗</span>
+                            </a>
+                            <a href="Node.JS.PDF" target="_blank" class="cert-card hover-card">
+                                <div class="cert-icon"><i class="fab fa-node-js"></i></div>
+                                <h4>Node JS</h4>
+                                <p>INFOSYS</p>
+                                <span class="cert-open-label">Open PDF ↗</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- NCC Highlight Card -->
+                    <div class="ncc-highlight-card">
+                        <div class="ncc-header">
+                            <img src="NCC_LOGO.png" alt="NCC Logo" class="ncc-logo-achievement" onerror="this.style.display='none'">
+                            <div class="ncc-title-block">
+                                <h3>National Cadet Corps <span class="ncc-abbr">(NCC)</span></h3>
+                                <div class="ncc-rank-badge"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> Sergeant — College NCC Unit</div>
+                            </div>
+                            <div class="ncc-cert-badge">
+                                <img src="NCC.jpg" alt="NCC C Certificate" class="ncc-cert-img" onerror="this.style.display='none'">
+                                <span class="cert-label">NCC C Certificate</span>
+                            </div>
+                        </div>
+                        <div class="ncc-stats">
+                            <div class="ncc-stat hover-card">
+                                <span class="stat-num">2</span>
+                                <span class="stat-label">ACT Camps</span>
+                            </div>
+                            <div class="ncc-stat hover-card">
+                                <span class="stat-num">1</span>
+                                <span class="stat-label">CATC Camp</span>
+                            </div>
+                            <div class="ncc-stat highlight hover-card">
+                                <span class="stat-num">1</span>
+                                <span class="stat-label">Army Attached Camp <em>(National)</em></span>
+                            </div>
+                            <div class="ncc-stat selected-camp hover-card">
+                                <span class="stat-num"><i class="fas fa-flag"></i></span>
+                                <span class="stat-label">IDSSC Selected <em>(National)</em></span>
+                            </div>
+                        </div>
+                        <div class="ncc-medal-highlight">
+                            <div class="medal-icon">🥇</div>
+                            <div class="medal-text">
+                                <h4>Best Cadet Medal — College Level</h4>
+                                <p>Awarded the prestigious <strong>Best Cadet Medal</strong> at the college level. Recognized for outstanding discipline, exemplary performance, and leadership qualities among all NCC cadets in the unit.</p>
+                            </div>
+                        </div>
+                        <div class="ncc-regret">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Was <strong>selected for the IDSSC National Camp</strong> — one of the most prestigious NCC national-level selections. Unfortunately, could not attend due to semester examinations. A bittersweet moment, but a true testament to the recognition earned through hard work.</p>
+                        </div>
+                    </div>
+
+                
+
+                <!-- MODIFICATION 3: NEW "Others" tab — Srujanavani Scholar & Student Coordinator -->
+                <div class="resume-content others">
+                    <h2 class="heading">My <span>Others</span></h2>
+                    <p class="desc">Beyond academics and technology, I actively contribute to my community through social service, mentorship, and student welfare organizations.</p>
+
+                    <!-- Srujanavani Hero Card -->
+                    <div class="srujanavani-hero-card">
+                        <div class="srujanavani-header">
+                            <div class="sruj-logo-placeholder">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <div class="sruj-title-block">
+                                <h3>Srujanavani <span class="sruj-accent">Foundation</span></h3>
+                                <p class="sruj-tagline">Student Welfare & Social Service Organization</p>
+                                <a href="https://srujanavani.org" target="_blank" class="sruj-link">🌐 srujanavani.org</a>
+                            </div>
+                            <div class="sruj-badge-stack">
+                                <div class="sruj-badge scholar">
+                                    <i class="fas fa-medal"></i>
+                                    <span>Scholar</span>
+                                </div>
+                                <div class="sruj-badge coordinator">
+                                    <i class="fas fa-users-cog"></i>
+                                    <span>Student Co-ordinator</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sruj-roles-grid">
+                            <div class="sruj-role-card hover-card">
+                                <div class="sruj-role-icon"><i class="fas fa-graduation-cap"></i></div>
+                                <h4>Scholar</h4>
+                                <p>Recognized as a scholar within the Srujanavani Foundation — awarded for academic excellence, leadership potential, and commitment to social values.</p>
+                            </div>
+                            <div class="sruj-role-card hover-card">
+                                <div class="sruj-role-icon"><i class="fas fa-users"></i></div>
+                                <h4>Student Co-ordinator</h4>
+                                <p>Serving as a student coordinator — organizing events, bridging communication between students and the foundation, and driving welfare initiatives on campus.</p>
+                            </div>
+                            <div class="sruj-role-card hover-card">
+                                <div class="sruj-role-icon"><i class="fas fa-heart"></i></div>
+                                <h4>Social Service</h4>
+                                <p>Actively participating in community outreach programs, student welfare drives, and social initiatives organized by Srujanavani for underprivileged students.</p>
+                            </div>
+                        </div>
+
+                        <div class="sruj-mission-note">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Srujanavani.org is a student welfare and social service organization dedicated to empowering students through education, mentorship, and community service. Being part of this mission has taught me leadership, empathy, and the power of giving back.</p>
+                        </div>
+                    </div>
+
+                    <!-- Extra Other roles/interests -->
+                    <div class="others-extra-grid">
+                        <div class="other-extra-card hover-card">
+                            <div class="oe-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                            <h4>Mentor & Peer Tutor</h4>
+                            <p>Helping junior students understand programming concepts, data analysis tools, and project building.</p>
+                        </div>
+                        <div class="other-extra-card hover-card">
+                            <div class="oe-icon"><i class="fas fa-bullhorn"></i></div>
+                            <h4>Event Organizer</h4>
+                            <p>Coordinated college tech events, workshops, and social service campaigns as part of student leadership roles.</p>
+                        </div>
+                        <div class="other-extra-card hover-card">
+                            <div class="oe-icon"><i class="fas fa-seedling"></i></div>
+                            <h4>Community Builder</h4>
+                            <p>Actively involved in building positive student communities — both online (GitHub, LinkedIn) and on campus.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end resume-box -->
+        </div><!-- end resume-container -->
+    </section>
+
+    <!-- NCC Logo Top Left -->
+    <div class="ncc-logo-topleft">
+        <img src="NCC_LOG.png" alt="NCC Logo" title="NCC Cadet" onerror="this.parentElement.innerHTML='<span class=\'ncc-fallback-text\'>NCC</span>'">
+    </div>
+
+    <!--------------- Services section----------->
+    <section class="services" id="services">
         <h2 class="heading">My <span>Services</span></h2>
         <div class="services-container">
             <div class="services-box">
@@ -250,134 +488,112 @@
                     <i class="bi bi-code-slash"></i>
                     <a href="https://github.com/MANIKANTAv6264/clg-website"><i class="bi bi-arrow-left"></i></a>
                 </div>
-                <h3> Web Development </h3>
+                <h3>Web Development</h3>
                 <p>Building responsive and dynamic websites using modern technologies like HTML, CSS, JavaScript, and frameworks. Focused on creating user-friendly and performance-optimized solutions.</p>
             </div>
-
             <div class="services-box">
                 <div class="icon">
                     <i class="bi bi-brush"></i>
                     <a href="#"><i class="bi bi-arrow-left"></i></a>
                 </div>
-                <h3> UX/UI Designer</h3>
+                <h3>UX/UI Designer</h3>
                 <p>Designing clean, creative, and interactive user interfaces that enhance user experience. Skilled in prototyping and wireframing with attention to detail and usability.</p>
             </div>
-
             <div class="services-box">
                 <div class="icon">
                     <i class="bi bi-android2"></i>
                     <a href="#"><i class="bi bi-arrow-left"></i></a>
                 </div>
-                <h3> Android Developer </h3>
+                <h3>Android Developer</h3>
                 <p>Developing mobile applications with intuitive interfaces and smooth performance. Experienced in front-end design and Android app development using Java and Kotlin.</p>
             </div>
-
             <div class="services-box">
                 <div class="icon">
                     <i class="bi bi-graph-up-arrow"></i>
                     <a href="#"><i class="bi bi-arrow-left"></i></a>
                 </div>
-                <h3> SEO </h3>
+                <h3>SEO</h3>
                 <p>Optimizing websites for better visibility and ranking on search engines. Skilled in keyword research, on-page/off-page SEO, and performance analysis.</p>
             </div>
-
             <div class="services-box">
                 <div class="icon">
                    <i class="bi bi-cpu"></i>
                    <a href="https://github.com/MANIKANTAv6264/AI-ChatBot.git"><i class="bi bi-arrow-left"></i></a>
                 </div>
-                <h3> AI & ML </h3>
-                <p>Applying Artificial Intelligence and Machine Learning techniques to solve real-world problems. Experienced in Python, data preprocessing, and building predictive models</p>
+                <h3>AI & ML</h3>
+                <p>Applying Artificial Intelligence and Machine Learning techniques to solve real-world problems. Experienced in Python, data preprocessing, and building predictive models.</p>
             </div>
-
             <div class="services-box">
                 <div class="icon">
                     <i class="fa-solid fa-chart-simple"></i>
                     <a href="https://github.com/MANIKANTAv6264/Data-Analysis"><i class="bi bi-arrow-left"></i></a>
                 </div>
                 <h3>Data Analysis</h3>
-                <p>Transforming raw data into actionable insights through visualization and analysis. Proficient in Python, Pandas, and data visualization tools to support decision-making.”
-</p>
+                <p>Transforming raw data into actionable insights through visualization and analysis. Proficient in Python, Pandas, and data visualization tools to support decision-making.</p>
             </div>
         </div>
     </section>
-<!------- portfolio-section --------->
-    <section class="portfolio " id="portfolio">
+
+    <!------- portfolio-section --------->
+    <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Project</span></h2>
         <div class="portfolio-container"> 
             <div class="portfolio-box">
                 <div class="portfolio-details active">
                     <p class="numb">01</p>
                     <h3>Frontend Project</h3>
-                    <p>Designed and developed a complete website for Sri Balaji Educational Institutions, covering both frontend and backend functionalities. Focused on clean UI, smooth navigation, and performance optimization. This project strengthened my understanding of deployment, and maintaining real-world applications.</p>
-                    <div class="tech">
-                        <p>HTML5, CSS3, JavaScript</p>
-                    </div>
+                    <p>Designed and developed a complete website for Sri Balaji Educational Institutions, covering both frontend and backend functionalities. Focused on clean UI, smooth navigation, and performance optimization.</p>
+                    <div class="tech"><p>HTML5, CSS3, JavaScript</p></div>
                     <div class="live-github"> 
                         <a href="https://sribalajiinstitution.in/"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
                         <a href="https://github.com/MANIKANTAv6264/clg-website"><i class="bi bi-github"></i><span>Github Repository</span></a>
                     </div>
                 </div>
-
                 <div class="portfolio-details">
                     <p class="numb">02</p>
                     <h3>Data Analysis Project</h3>
-                    <p>Analyzed a large grocery shopping dataset to identify purchasing trends across different age groups. Used Python (Pandas, NumPy, Matplotlib) for data cleaning, analysis, and visualization. The project highlighted which age group purchased the most items, helping to understand customer behavior and support business decision-making.</p>
-                    <div class="tech">
-                        <p>Python</p>
-                    </div>
+                    <p>Analyzed a large grocery shopping dataset to identify purchasing trends across different age groups. Used Python (Pandas, NumPy, Matplotlib) for data cleaning, analysis, and visualization.</p>
+                    <div class="tech"><p>Python</p></div>
                     <div class="live-github"> 
                         <a href="#"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
                         <a href="https://github.com/MANIKANTAv6264/Data-Analysis"><i class="bi bi-github"></i><span>Github Repository</span></a>
                     </div>
                 </div>
-
                 <div class="portfolio-details">
                     <p class="numb">03</p>
                     <h3>Backend Project</h3>
-                    <p>Developed a Python-based chatbot powered by the Groq API. The chatbot processes user input through text/voice and stores previous conversations to deliver more accurate, context-aware responses. Designed to simulate natural interactions, it demonstrates memory-based conversational AI.</p>
-                    <div class="tech">
-                        <p>Python, JS</p>
-                    </div>
+                    <p>Developed a Python-based chatbot powered by the Groq API. The chatbot processes user input through text/voice and stores previous conversations to deliver more accurate, context-aware responses.</p>
+                    <div class="tech"><p>Python, JS</p></div>
                     <div class="live-github"> 
                         <a href="#"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
                         <a href="https://github.com/MANIKANTAv6264/AI-ChatBot.git"><i class="bi bi-github"></i><span>Github Repository</span></a>
                     </div>
                 </div>
-
                 <div class="portfolio-details">
                     <p class="numb">04</p>
                     <h3>Live Object Search AI Assistant</h3>
-                    <p>Built a real-time computer vision assistant using YOLOv3 for object detection and Groq LLMs for contextual knowledge retrieval. Integrated non-blocking input handling, speech synthesis, and dynamic prompt engineering to deliver accurate, internet-based answers related to detected objects while maintaining continuous video streaming.</p>
-                    <div class="tech">
-                        <p>Python, OpenCV, YOLOv3</p>
-                    </div>
+                    <p>Built a real-time computer vision assistant using YOLOv3 for object detection and Groq LLMs for contextual knowledge retrieval.</p>
+                    <div class="tech"><p>Python, OpenCV, YOLOv3</p></div>
                     <div class="live-github"> 
                         <a href="https://github.com/MANIKANTAv6264/intelligent-object-detection"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
                         <a href="https://github.com/MANIKANTAv6264/intelligent-object-detection"><i class="bi bi-github"></i><span>Github Repository</span></a>
                     </div>
                 </div>
-
                 <div class="portfolio-details">
                     <p class="numb">05</p>
                     <h3>Trade Analysis</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore illo nisi architecto eaque consequatur et exercitationem. Sint nemo eos delectus ratione officiis harum laborum atque aut sunt, voluptatem vitae.</p>
-                    <div class="tech">
-                        <p>HTML5, CSS3, JavaScript</p>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore illo nisi architecto eaque consequatur et exercitationem.</p>
+                    <div class="tech"><p>HTML5, CSS3, JavaScript</p></div>
                     <div class="live-github"> 
                         <a href="#"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
                         <a href="#"><i class="bi bi-github"></i><span>Github Repository</span></a>
                     </div>
                 </div>
-
                 <div class="portfolio-details">
                     <p class="numb">06</p>
                     <h3>Frontend Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore illo nisi architecto eaque consequatur et exercitationem. Sint nemo eos delectus ratione officiis harum laborum atque aut sunt, voluptatem vitae.</p>
-                    <div class="tech">
-                        <p>HTML5, CSS3, JavaScript</p>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore illo nisi architecto eaque consequatur et exercitationem.</p>
+                    <div class="tech"><p>HTML5, CSS3, JavaScript</p></div>
                     <div class="live-github"> 
                         <a href="#"><i class="bi bi-arrow-left"></i><span>Live Project</span></a>
                         <a href="#"><i class="bi bi-github"></i><span>Github Repository</span></a>
@@ -386,32 +602,18 @@
             </div>
 
             <div class="portfolio-box">
-                <!--  images carousel  -->
                 <div class="portfolio-carousel">
                     <div class="img-slide">
-                        <div class="img-item">
-                            <img src="./college_proj.jpeg">
-                        </div>
-                        <div class="img-item">
-                            <img src="./data_analysis.jpeg">
-                        </div>
-                        <div class="img-item">
-                            <img src="./chat_bot.jpeg">
-                        </div>
-                        <div class="img-item">
-                            <img src="./yolov8_compressed.jpg">
-                        </div>
-                        <div class="img-item">
-                            <img src="./trading.jpg">
-                        </div>
-                        <div class="img-item">
-                            <img src="./portfolio-5.jpg">
-                        </div>
+                        <div class="img-item"><img src="./college_proj.jpeg"></div>
+                        <div class="img-item"><img src="./data_analysis.jpeg"></div>
+                        <div class="img-item"><img src="./chat_bot.jpeg"></div>
+                        <div class="img-item"><img src="./yolov8_compressed.jpg"></div>
+                        <div class="img-item"><img src="./trading.jpg"></div>
+                        <div class="img-item"><img src="./portfolio-5.jpg"></div>
                     </div>
                 </div>
-
                 <div class="navigation">
-                    <button class="arrow-left disabled" title="left-arrow"><i class="bi bi-chevron-left"></i> </button>
+                    <button class="arrow-left disabled" title="left-arrow"><i class="bi bi-chevron-left"></i></button>
                     <button class="arrow-right" title="right-arrow"><i class="bi bi-chevron-right"></i></button>
                 </div>
             </div>
@@ -423,55 +625,36 @@
         <div class="contact-container">
             <div class="contact-box">
                 <h2>Let's Work Together</h2>
-                <p class="desc">I’m always open to new opportunities, collaborations, and exciting projects. Whether you have a question, an idea, or just want to say hello, feel free to reach out—I’d be happy to connect.</p>
+                <p class="desc">I'm always open to new opportunities, collaborations, and exciting projects. Whether you have a question, an idea, or just want to say hello, feel free to reach out—I'd be happy to connect.</p>
                 <div class="contact-detail">
                     <i class="bi bi-telephone-fill"></i>
-                    <div class="detail">
-                        <p>Phone</p>
-                        <p>(+91) 9346478480</p>
-                    </div>
+                    <div class="detail"><p>Phone</p><p>(+91) 9346478480</p></div>
                 </div>
                 <div class="contact-detail">
                     <i class="bi bi-envelope-fill"></i>
-                    <div class="detail">
-                        <p>Email</p>
-                        <p>manikantavanapalli6264@gmail.com</p>
-                    </div>
+                    <div class="detail"><p>Email</p><p>manikantavanapalli6264@gmail.com</p></div>
                 </div>
                 <div class="contact-detail">
                     <i class="bi bi-geo-alt-fill"></i>
-                    <div class="detail">
-                        <p>Address</p>
-                        <p>5-109/4, Rajucheruvu, Pendurthi, Vishakapatnam, AndhraPradesh, India , 531173</p>
-                    </div>
+                    <div class="detail"><p>Address</p><p>5-109/4, Rajucheruvu, Pendurthi, Vishakapatnam, AndhraPradesh, India, 531173</p></div>
                 </div>
             </div>
-
             <div class="contact-box">
                 <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                 <!-- Web3Forms Access Key -->
-                   <input type="hidden" name="access_key" value="32d8d196-9b6a-4f3c-88be-49090e21f74b">
-                   <h2 class="heading">Contact <span>Me!</span></h2>
-
+                    <input type="hidden" name="access_key" value="32d8d196-9b6a-4f3c-88be-49090e21f74b">
+                    <h2 class="heading">Contact <span>Me!</span></h2>
                     <div class="field-box">
                         <input type="text" name="name" placeholder="Full Name" required>
                         <input type="email" name="email" placeholder="Email Address" required>
-                        <input type="tel" name="phone" placeholder=" Phone Number" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
                         <input type="text" name="subject" placeholder="Email Subject" required>
                         <textarea name="message" placeholder="Your Message" required></textarea>
                     </div>
-
-        <!-- Honeypot for bot protection -->
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-        <!-- Optional: Redirect to thank you page -->
-        <!-- <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you.html"> -->
-
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
         </div>
-
     </section>
 
     <script>
@@ -485,159 +668,113 @@
         }
 
         const navlinks = document.querySelectorAll('nav .nav-links a');
-
-        const activePage = () => {
-            navlinks.forEach(link => {
-                link.classList.remove('active');
-            });
-        }
-
+        const activePage = () => { navlinks.forEach(link => { link.classList.remove('active'); }); }
         navlinks.forEach((link) => {
             link.addEventListener('click', () => {
-                if (!link.classList.contains('active')) {
-                    activePage();
-                    link.classList.add('active');
-                }
+                if (!link.classList.contains('active')) { activePage(); link.classList.add('active'); }
             });
         });
 
-        // Add scroll event listener to update active nav & sidebar links based on section in view
         window.addEventListener('scroll', () => {
             let current = '';
             const sections = document.querySelectorAll('section');
-
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
-                if (window.scrollY >= (sectionTop - sectionHeight / 3)) {
-                    current = section.getAttribute('id');
-                }
+                if (window.scrollY >= (sectionTop - sectionHeight / 3)) { current = section.getAttribute('id'); }
             });
-
-            // Update top nav links
             navlinks.forEach(link => {
                 link.classList.remove('active');
-                if (link.getAttribute('href') && link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
-                }
+                if (link.getAttribute('href') && link.getAttribute('href').substring(1) === current) { link.classList.add('active'); }
             });
-
-            // Update sidebar links (if present)
             const sidebarLinks = document.querySelectorAll('.sidebar a');
             sidebarLinks.forEach(link => {
                 link.classList.remove('active');
-                if (link.getAttribute('href') && link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
-                }
+                if (link.getAttribute('href') && link.getAttribute('href').substring(1) === current) { link.classList.add('active'); }
             });
         });
 
-        // Sidebar link click behaviour: set active class and close sidebar
         const sidebarLinks = document.querySelectorAll('.sidebar a');
         sidebarLinks.forEach(link => {
             link.addEventListener('click', (e) => {
-                // mark clicked link active
                 sidebarLinks.forEach(l => l.classList.remove('active'));
                 link.classList.add('active');
-
-                // close sidebar after click (if it's open)
                 const sidebar = document.getElementById('sidebar');
-                if (sidebar && sidebar.classList.contains('show')) {
-                    toggleSidebar();
+                if (sidebar && sidebar.classList.contains('show')) { toggleSidebar(); }
+            });
+        });
+
+        // Resume tab switching — uses data-target
+        document.querySelectorAll('.resume-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.resume-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const target = this.dataset.target;
+                document.querySelectorAll('.resume-content').forEach(c => c.classList.remove('active'));
+                const targetEl = document.querySelector('.resume-content.' + target);
+                if (targetEl) targetEl.classList.add('active');
+            });
+        });
+
+        // Hobby tab switching
+        document.querySelectorAll('.hobby-tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.hobby-tab-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const hobby = this.dataset.hobby;
+                document.querySelectorAll('.hobby-panel').forEach(p => p.classList.remove('active'));
+                const panel = document.getElementById('hobby-' + hobby);
+                if (panel) {
+                    panel.classList.add('active');
+                    panel.style.animation = 'none';
+                    panel.offsetHeight;
+                    panel.style.animation = 'fadeSlideIn 0.35s ease';
                 }
             });
         });
 
-        const resumeBtns = document.querySelectorAll('.resume-btn');
-            resumeBtns.forEach((btn , idx) => {
-                btn.addEventListener('click', () => {
-                    const resumeDetails = document.querySelectorAll('.resume-content');
-
-                    resumeBtns.forEach(btn => {
-                        btn.classList.remove('active');
-                    });
-                    btn.classList.add('active');
-
-                    resumeDetails.forEach(detail => {
-                        detail.classList.remove('active');
-                    });
-                    resumeDetails[idx].classList.add('active');
-            });
-        });
-
+        // Portfolio carousel
         const arrowRight = document.querySelector('.portfolio-box .navigation .arrow-right');
         const arrowLeft = document.querySelector('.portfolio-box .navigation .arrow-left');
-
         let index = 0;
-
         const activePortfolio = () => {
             const imgSlide = document.querySelector('.portfolio-carousel .img-slide');
-
             const portfolioDetails = document.querySelectorAll('.portfolio-details');
-
             imgSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 2}rem))`;
-
-            portfolioDetails.forEach(detail => {
-                detail.classList.remove('active');
-            });
+            portfolioDetails.forEach(detail => { detail.classList.remove('active'); });
             portfolioDetails[index].classList.add('active');
         }
-
-
-
-
         arrowRight.addEventListener('click',() => {
-            if(index < 3){
-                index++;
-                arrowLeft.classList.remove('disabled');
-            }
-            else{
-                index = 4;
-                arrowRight.classList.add('disabled');
-            }
+            if(index < 3){ index++; arrowLeft.classList.remove('disabled'); }
+            else{ index = 4; arrowRight.classList.add('disabled'); }
             activePortfolio();
         });
-
         arrowLeft.addEventListener('click',() => {
-            if(index > 1){
-                index--;
-                arrowRight.classList.remove('disabled');
-            }
-            else{
-                index = 0;
-                arrowLeft.classList.add('disabled');
-            }
+            if(index > 1){ index--; arrowRight.classList.remove('disabled'); }
+            else{ index = 0; arrowLeft.classList.add('disabled'); }
             activePortfolio();
         });
 
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            const menuIcon = document.querySelector(".menu-icon i");
+            if (sidebar.classList.contains("show")) {
+                sidebar.classList.remove("show");
+                menuIcon.classList.remove("bi-x-lg");
+                menuIcon.classList.add("bi-list");
+            } else {
+                sidebar.classList.add("show");
+                menuIcon.classList.remove("bi-list");
+                menuIcon.classList.add("bi-x-lg");
+            }
+        }
 
-
-    // Removed stale menu-icon listener (menu button uses inline onclick to call toggleSidebar)
-
-
-
-  function toggleSidebar() {
-    const sidebar = document.getElementById("sidebar");
-    const menuIcon = document.querySelector(".menu-icon i");
-
-    if (sidebar.classList.contains("show")) {
-        sidebar.classList.remove("show");
-        menuIcon.classList.remove("bi-x-lg");
-        menuIcon.classList.add("bi-list");
-    } else {
-        sidebar.classList.add("show");
-        menuIcon.classList.remove("bi-list");
-        menuIcon.classList.add("bi-x-lg");
-    }
-}
-
-// Close sidebar when clicking outside
-document.addEventListener("click", function(event) {
-    const sidebar = document.getElementById("sidebar");
-    if (sidebar.classList.contains("show") && !sidebar.contains(event.target) && !event.target.closest(".menu-icon")) {
-        toggleSidebar();
-    }
-});
+        document.addEventListener("click", function(event) {
+            const sidebar = document.getElementById("sidebar");
+            if (sidebar.classList.contains("show") && !sidebar.contains(event.target) && !event.target.closest(".menu-icon")) {
+                toggleSidebar();
+            }
+        });
     </script>
 </body>
 </html>
